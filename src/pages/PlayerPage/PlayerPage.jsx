@@ -15,6 +15,7 @@ const PlayerPage = () => {
   const [messages, setMessages] = useState([]);
   const [media, setMedia] = useState(null);
   const [ws, setWs] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const WS_URL = "ws://localhost:8080";
 
@@ -36,6 +37,7 @@ const PlayerPage = () => {
       try {
         const messageData = JSON.parse(data);
         console.log("Received message:", messageData);
+        setLoading(false);
         if (messageData.type == "chat") {
           addToMessages(messageData);
           setMedia(null);
@@ -76,13 +78,15 @@ const PlayerPage = () => {
   }
 
   /**
-   * Envoie le message au server aevc Websocket et l'ajoute dans la liste pour l'afficher
+   * Envoie le message au server avec Websocket et l'ajoute dans la liste pour l'afficher.
+   * Active le message de chargement à l'envoi du message
    * @param {string} message
    */
   function sendMessage(message) {
     if (ws && ws.readyState === WebSocket.OPEN) {
       ws.send(JSON.stringify({ type: "chat", target: "gm", content: message }));
       addToMessages({ type: "chat", target: "gm", content: message });
+      setLoading(true);
     }
   }
 
@@ -100,6 +104,14 @@ const PlayerPage = () => {
           <>
             <ChatWindow messages={messages} />
             <MessageInput onSend={sendMessage} autofocus={true} />
+            {loading ? (
+              <div className="loader-container">
+                <span className="loader-text">Analyse en cours</span>
+                <div className="loader"></div>
+              </div>
+            ) : (
+              <></>
+            )}
           </>
         )}
         <div className="bot-name">Sivrage</div>

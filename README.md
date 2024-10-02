@@ -23,6 +23,12 @@ Les contraintes sont donc les suivantes :
 - Se rendre dans le dossier cloné
 - Lancer la commande `npm install`
 - Une fois l'installation terminée, lancer `npm run dev`
-- Dans un autre terminal, se rendre dans le dossier backend et lancer `npm start`
+- Dans un autre terminal, se rendre dans le dossier backend et lancer `npm install` puis `npm start`
+
+## Evolutions possibles
+
+- Pour le message de chargement, ajouter des textes dans un tableau et piocher dedans aléatoirement pour le message à afficher
+  - Il est également possible de changer le message afficher à différentes intervales de temps
+- Pouvoir générer les boutons d'images/vidéos à envoyer à la volée
 
 ## Documentation
