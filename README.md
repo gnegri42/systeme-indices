@@ -21,9 +21,9 @@ Les contraintes sont donc les suivantes :
 
 - Cloner le code depuis le repo git
 - Se rendre dans le dossier cloné
-- Lancer la commande `npm install`
+- La première fois, ou après ajout d'un nouveau packager, lancer la commande `npm install`
 - Une fois l'installation terminée, lancer `npm run dev`
-- Dans un autre terminal, se rendre dans le dossier backend et lancer `npm install` puis `npm start`
+- Dans un autre terminal, se rendre dans le dossier backend et lancer `npm install` la première fois puis `npm start`
 
 ## Evolutions possibles
 
