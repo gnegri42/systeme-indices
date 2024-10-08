@@ -17,7 +17,7 @@ const PlayerPage = () => {
   const [ws, setWs] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const WS_URL = "ws://localhost:8080";
+  const WS_URL = "ws://192.168.1.17:8080";
 
   /**
    * Gestion de la réception des messages avec Websocket

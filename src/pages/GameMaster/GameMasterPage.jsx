@@ -6,7 +6,7 @@ import "./GameMasterPage.css";
 const GameMasterPage = () => {
   const [messages, setMessages] = useState([]);
   const [ws, setWs] = useState(null);
-  const WS_URL = "ws://localhost:8080";
+  const WS_URL = "ws://192.1.17:8080";
 
   /**
    * Gestion de la réception des messages avec Websocket
