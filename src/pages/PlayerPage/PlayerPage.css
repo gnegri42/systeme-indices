@@ -25,18 +25,19 @@
   width: 100%;
 }
 .player-form input {
-  margin-top: 200px;
   color: black;
   width: 80%;
 }
 
 .messages-list {
-  max-height: 200px;
+  height: 200px;
+  overflow: auto;
+  margin-bottom: 20px;
 }
 
 .bot-name {
   position: relative;
-  top: 20%;
+  top: 20px;
   font-size: 0.5em;
 }
 
@@ -62,7 +63,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
 }
 
 .loader-text {

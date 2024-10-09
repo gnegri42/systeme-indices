@@ -7,6 +7,7 @@ import useDisableShortcuts from "../../hooks/DisableShortcuts";
 import "./PlayerPage.css";
 import video from "../../assets/background-video.mp4";
 import avatar from "../../assets/sivrage_avatar.png";
+import { mainUrl } from "../../config/config";
 
 const PlayerPage = () => {
   useFullScreen();
@@ -17,7 +18,19 @@ const PlayerPage = () => {
   const [ws, setWs] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const WS_URL = "ws://192.168.1.17:8080";
+  const WS_URL = `ws://${mainUrl}:8080`;
+
+  useEffect(() => {
+    if (messages.length > 4) {
+      setMessages((prevMessages) => [...prevMessages.slice(1)]);
+    }
+    // On ramène le scroll tout en bas
+    const messageBody = document.querySelector("#messages-list");
+    if (messageBody) {
+      messageBody.scrollTop =
+        messageBody.scrollHeight - messageBody.clientHeight;
+    }
+  }, [messages]);
 
   /**
    * Gestion de la réception des messages avec Websocket
@@ -70,11 +83,7 @@ const PlayerPage = () => {
    * @param {string} message Texte à ajouter
    */
   function addToMessages(message) {
-    if (messages.length >= 4) {
-      setMessages((prevMessages) => [...prevMessages.slice(1), message]);
-    } else {
-      setMessages((prevMessages) => [...prevMessages, message]);
-    }
+    setMessages((prevMessages) => [...prevMessages, message]);
   }
 
   /**
@@ -104,6 +113,7 @@ const PlayerPage = () => {
           <>
             <ChatWindow messages={messages} />
             <MessageInput onSend={sendMessage} autofocus={true} />
+            <div className="bot-name">Sivrage</div>
             {loading ? (
               <div className="loader-container">
                 <span className="loader-text">Analyse en cours</span>
@@ -114,7 +124,6 @@ const PlayerPage = () => {
             )}
           </>
         )}
-        <div className="bot-name">Sivrage</div>
       </div>
     </div>
   );

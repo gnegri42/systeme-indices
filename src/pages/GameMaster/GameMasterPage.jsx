@@ -2,11 +2,21 @@ import React, { useState, useEffect } from "react";
 import MessageInput from "../../components/MessageInput/MessageInput";
 import ChatWindow from "../../components/ChatWindow/ChatWindow";
 import "./GameMasterPage.css";
+import { mainUrl } from "../../config/config";
 
 const GameMasterPage = () => {
   const [messages, setMessages] = useState([]);
   const [ws, setWs] = useState(null);
-  const WS_URL = "ws://192.168.1.17:8080";
+  const WS_URL = `ws://${mainUrl}:8080`;
+
+  useEffect(() => {
+    if (messages.length > 4) {
+      setMessages((prevMessages) => [...prevMessages.slice(1)]);
+    }
+    // On ramène le scroll tout en bas
+    const messageBody = document.querySelector("#messages-list");
+    messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+  }, [messages]);
 
   /**
    * Gestion de la réception des messages avec Websocket
@@ -49,11 +59,7 @@ const GameMasterPage = () => {
    * @param {string} message Texte à ajouter
    */
   function addToMessages(message) {
-    if (messages.length >= 4) {
-      setMessages((prevMessages) => [...prevMessages.slice(1), message]);
-    } else {
-      setMessages((prevMessages) => [...prevMessages, message]);
-    }
+    setMessages((prevMessages) => [...prevMessages, message]);
   }
 
   /**
@@ -89,8 +95,12 @@ const GameMasterPage = () => {
     <div id="gamemaster-page">
       <ChatWindow messages={messages} />
       <MessageInput onSend={sendMessage} />
-      <button onClick={() => sendMedia("path/to/image.jpg")}>Send Image</button>
-      <button onClick={() => sendMedia("path/to/video.mp4")}>Send Video</button>
+      <button onClick={() => sendMedia("/img/sivrage_avatar.png")}>
+        Send Image
+      </button>
+      <button onClick={() => sendMedia("/video/background-video.mp4")}>
+        Send Video
+      </button>
       <button onClick={() => resetChat()}>Reset Chat</button>
     </div>
   );
