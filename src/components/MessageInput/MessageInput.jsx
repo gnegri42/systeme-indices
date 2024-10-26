@@ -23,7 +23,7 @@ const MessageInput = ({ onSend, autofocus = false }) => {
           onChange={(e) => setText(e.target.value)}
           autoFocus={autofocus}
         />
-        <button type="submit"></button>
+        <button type="submit">Envoyer</button>
       </form>
     </>
   );

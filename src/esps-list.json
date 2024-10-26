@@ -1,0 +1,131 @@
+[
+  {
+    "step": "1",
+    "items": [
+      {
+        "nom": "ESP -1 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.101"
+      },
+      {
+        "nom": "ESP -2 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.102"
+      },
+      {
+        "nom": "ESP -3 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.103"
+      },
+      {
+        "nom": "ESP -4 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.104"
+      },
+      {
+        "nom": "ESP -5 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.105"
+      },
+      {
+        "nom": "ESP -6 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.106"
+      }
+    ]
+  },
+  {
+    "step": "2",
+    "items": [
+      {
+        "nom": "ESP -7 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.107"
+      },
+      {
+        "nom": "ESP -8 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.108"
+      },
+      {
+        "nom": "ESP -9 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.109"
+      },
+      {
+        "nom": "ESP -10 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.110"
+      },
+      {
+        "nom": "ESP -11 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.111"
+      },
+      {
+        "nom": "ESP -12 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.112"
+      },
+      {
+        "nom": "ESP -13 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.113"
+      },
+      {
+        "nom": "ESP -14 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.114"
+      },
+      {
+        "nom": "ESP -15 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.115"
+      },
+      {
+        "nom": "ESP -16 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.116"
+      },
+      {
+        "nom": "ESP -17 ",
+        "description": "la description et blablabla",
+        "etat_endpoint": "actif",
+        "activer_endpoint": "test",
+        "ip": "192.168.1.117"
+      }
+    ]
+  }
+]

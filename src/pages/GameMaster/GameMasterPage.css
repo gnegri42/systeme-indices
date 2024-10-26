@@ -3,9 +3,32 @@
   height: 100vh;
   width: 100vw;
   color: white;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 10%;
+}
+
+.gamemaster-clues {
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   flex-direction: column;
+}
+
+.gamemaster-clues .messages-list {
+  flex: 1;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.gamemaster-clues .player-form input {
+  width: 100%;
+  height: 100px;
+}
+
+.player-form button {
+  display: block;
+  width: 100%;
+}
+
+#gamemaster-page > * {
+  flex: 1 100%;
 }

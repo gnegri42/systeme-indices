@@ -1,0 +1,56 @@
+#tablet-page {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tablet-page-content {
+  z-index: 1;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+
+.tablet-form {
+  width: 100%;
+}
+
+.messages-list {
+  height: 200px;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.bot-name {
+  position: relative;
+  top: 20px;
+  font-size: 0.5em;
+}
+
+.bot-avatar {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  height: 75px;
+  z-index: 10;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  object-fit: cover;
+}

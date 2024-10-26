@@ -1,0 +1,52 @@
+[
+  {
+    "step": "1",
+    "buttons": [
+      {
+        "name": "Bypass1",
+        "type": "bypass",
+        "description": "la description et blablabla",
+        "endpoint-state": "actif",
+        "ip": "192.168.1.101"
+      },
+      {
+        "name": "Son entrée joueurs ",
+        "type": "sound",
+        "description": "la description et blablabla",
+        "src": "/sound/cymbal.wav",
+        "loop": "false"
+      },
+      {
+        "name": "Video urgence",
+        "type": "video",
+        "description": "la description et blablabla",
+        "src": "/img/sivrage_avatar.png"
+      }
+    ]
+  },
+  {
+    "step": "2",
+    "buttons": [
+      {
+        "name": "Bypass2",
+        "type": "bypass",
+        "description": "la description et blablabla",
+        "endpoint-state": "actif",
+        "ip": "192.168.1.101"
+      },
+      {
+        "name": "Son sortie joueurs ",
+        "type": "son",
+        "description": "la description et blablabla",
+        "src": "/img/sivrage_avatar.png",
+        "loop": "false"
+      },
+      {
+        "name": "Video non urgence",
+        "type": "video",
+        "description": "la description et blablabla",
+        "src": "/video/background-video.mp4"
+      }
+    ]
+  }
+]

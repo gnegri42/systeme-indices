@@ -3,11 +3,16 @@ import MessageInput from "../../components/MessageInput/MessageInput";
 import ChatWindow from "../../components/ChatWindow/ChatWindow";
 import "./GameMasterPage.css";
 import { mainUrl } from "../../config/config";
+import Commands from "../../assets/commands.json";
+import Bypass from "../../components/CommandsComponents/BypassCommand/BypassCommand";
+import VideoCommand from "../../components/CommandsComponents/VideoCommand/VideoCommand";
+import SoundCommand from "../../components/CommandsComponents/SoundCommand/SoundCommand";
 
 const GameMasterPage = () => {
   const [messages, setMessages] = useState([]);
   const [ws, setWs] = useState(null);
   const WS_URL = `ws://${mainUrl}:8080`;
+  const [stepToShow, setStepToShow] = useState("1");
 
   useEffect(() => {
     if (messages.length > 4) {
@@ -93,15 +98,38 @@ const GameMasterPage = () => {
 
   return (
     <div id="gamemaster-page">
-      <ChatWindow messages={messages} />
-      <MessageInput onSend={sendMessage} />
-      <button onClick={() => sendMedia("/img/sivrage_avatar.png")}>
-        Send Image
-      </button>
-      <button onClick={() => sendMedia("/video/background-video.mp4")}>
-        Send Video
-      </button>
-      <button onClick={() => resetChat()}>Reset Chat</button>
+      <div className="gamemaster-clues">
+        <ChatWindow messages={messages} />
+        <MessageInput onSend={sendMessage} />
+        <button onClick={() => sendMedia("/img/sivrage_avatar.png")}>
+          Send Image
+        </button>
+        <button onClick={() => sendMedia("/video/background-video.mp4")}>
+          Send Video
+        </button>
+        <button onClick={() => resetChat()}>Reset Chat</button>
+      </div>
+      <div className="gamemaster-game-track">
+        {Commands.map((commands, index) =>
+          commands.step == stepToShow ? (
+            commands.buttons.map((commandButton, index) => (
+              <>
+                {commandButton.type == "bypass" ? (
+                  <Bypass commandButton={commandButton} key={index} />
+                ) : commandButton.type == "sound" ? (
+                  <SoundCommand commandButton={commandButton} key={index} />
+                ) : commandButton.type == "video" ? (
+                  <VideoCommand commandButton={commandButton} key={index} />
+                ) : (
+                  <></>
+                )}
+              </>
+            ))
+          ) : (
+            <></>
+          )
+        )}
+      </div>
     </div>
   );
 };
