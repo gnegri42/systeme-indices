@@ -1,28 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./SoundCommand.css";
-import H5AudioPlayer from "react-h5-audio-player";
+import { Howl, Howler } from "howler";
 
 const SoundCommand = ({ commandButton }) => {
-  const [showControls, setShowControls] = useState(false);
-  const [state, setState] = useState(false);
-
-  useEffect(() => {
-    console.log("COMMANDES BUTTN : ", commandButton);
-    console.log("COMMANDES BUTTN LOOP : ", commandButton.loop);
-  }, []);
+  //   const [showControls, setShowControls] = useState(false);
+  //   const [state, setState] = useState(false);
+  var sound = new Howl({
+    src: [commandButton.src],
+  });
 
   return (
     <div className="sound-command-container">
-      {showControls ? (
-        <H5AudioPlayer
-          hasDefaultKeyBinding={false}
-          loop={commandButton.loop}
-          src={commandButton.src}
-        />
-      ) : (
-        <></>
-      )}
-
       {commandButton.description == "" ? (
         <></>
       ) : (
@@ -34,10 +22,10 @@ const SoundCommand = ({ commandButton }) => {
         <button
           className="sound-command-button"
           onClick={() => {
-            setShowControls(!showControls);
+            sound.play();
           }}
         >
-          {showControls ? "Fermer le lecteur" : commandButton.name}
+          {commandButton.name}
         </button>
       </div>
     </div>

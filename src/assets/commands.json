@@ -1,6 +1,7 @@
 [
   {
     "step": "1",
+    "step_name": "Première partie",
     "buttons": [
       {
         "name": "Bypass1",
@@ -13,12 +14,11 @@
         "name": "Son entrée joueurs ",
         "type": "sound",
         "description": "la description et blablabla",
-        "src": "/sound/cymbal.wav",
-        "loop": "false"
+        "src": "/sound/cymbal.wav"
       },
       {
-        "name": "Video urgence",
-        "type": "video",
+        "name": "Image Sivrage",
+        "type": "image",
         "description": "la description et blablabla",
         "src": "/img/sivrage_avatar.png"
       }
@@ -26,6 +26,7 @@
   },
   {
     "step": "2",
+    "step_name": "Seconde partie",
     "buttons": [
       {
         "name": "Bypass2",
@@ -36,10 +37,9 @@
       },
       {
         "name": "Son sortie joueurs ",
-        "type": "son",
+        "type": "sound",
         "description": "la description et blablabla",
-        "src": "/img/sivrage_avatar.png",
-        "loop": "false"
+        "src": "/sound/cymbal.wav"
       },
       {
         "name": "Video non urgence",

@@ -112,7 +112,11 @@ const PlayerPage = () => {
         ) : (
           <>
             <ChatWindow messages={messages} />
-            <MessageInput onSend={sendMessage} autofocus={true} />
+            <MessageInput
+              onSend={sendMessage}
+              autofocus={true}
+              sendButton={false}
+            />
             <div className="bot-name">Sivrage</div>
             {loading ? (
               <div className="loader-container">

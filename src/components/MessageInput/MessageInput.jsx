@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./MessageInput.css";
 
-const MessageInput = ({ onSend, autofocus = false }) => {
+const MessageInput = ({
+  onSend,
+  autofocus = false,
+  textarea = false,
+  sendButton = true,
+}) => {
   const [text, setText] = useState("");
 
   /**
@@ -17,13 +22,17 @@ const MessageInput = ({ onSend, autofocus = false }) => {
   return (
     <>
       <form onSubmit={handleSend} className="player-form">
-        <input
-          type="text"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          autoFocus={autofocus}
-        />
-        <button type="submit">Envoyer</button>
+        {textarea ? (
+          <textarea value={text} onChange={(e) => setText(e.target.value)} />
+        ) : (
+          <input
+            type="text"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            autoFocus={autofocus}
+          />
+        )}
+        {sendButton ? <button type="submit">Envoyer</button> : <></>}
       </form>
     </>
   );

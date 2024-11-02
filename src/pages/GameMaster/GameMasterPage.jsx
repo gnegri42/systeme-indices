@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
-import MessageInput from "../../components/MessageInput/MessageInput";
-import ChatWindow from "../../components/ChatWindow/ChatWindow";
 import "./GameMasterPage.css";
 import { mainUrl } from "../../config/config";
 import Commands from "../../assets/commands.json";
+
+// Components
+import MessageInput from "../../components/MessageInput/MessageInput";
+import ChatWindow from "../../components/ChatWindow/ChatWindow";
 import Bypass from "../../components/CommandsComponents/BypassCommand/BypassCommand";
-import VideoCommand from "../../components/CommandsComponents/VideoCommand/VideoCommand";
+import MediaCommand from "../../components/CommandsComponents/MediaCommand/MediaCommand";
 import SoundCommand from "../../components/CommandsComponents/SoundCommand/SoundCommand";
+import ChronometerComponent from "../../components/ChronometerComponent/ChronometerComponent";
+import Nav from "../../components/NavComponent/NavComponent";
 
 const GameMasterPage = () => {
   const [messages, setMessages] = useState([]);
@@ -99,36 +103,46 @@ const GameMasterPage = () => {
   return (
     <div id="gamemaster-page">
       <div className="gamemaster-clues">
+        <ChronometerComponent />
         <ChatWindow messages={messages} />
-        <MessageInput onSend={sendMessage} />
-        <button onClick={() => sendMedia("/img/sivrage_avatar.png")}>
-          Send Image
-        </button>
-        <button onClick={() => sendMedia("/video/background-video.mp4")}>
-          Send Video
-        </button>
+        <MessageInput onSend={sendMessage} textarea={true} />
         <button onClick={() => resetChat()}>Reset Chat</button>
       </div>
       <div className="gamemaster-game-track">
-        {Commands.map((commands, index) =>
-          commands.step == stepToShow ? (
-            commands.buttons.map((commandButton, index) => (
-              <>
-                {commandButton.type == "bypass" ? (
-                  <Bypass commandButton={commandButton} key={index} />
-                ) : commandButton.type == "sound" ? (
-                  <SoundCommand commandButton={commandButton} key={index} />
-                ) : commandButton.type == "video" ? (
-                  <VideoCommand commandButton={commandButton} key={index} />
-                ) : (
-                  <></>
-                )}
-              </>
-            ))
-          ) : (
-            <></>
-          )
-        )}
+        <Nav setStepToShow={setStepToShow} Commands={Commands} />
+        <div className="gamemaster-commands">
+          {Commands.map((commands, index) =>
+            commands.step == stepToShow ? (
+              commands.buttons.map((commandButton, index) => (
+                <>
+                  <div className="command-container">
+                    {commandButton.type ? (
+                      <p className="command-type">{commandButton.type}</p>
+                    ) : (
+                      <></>
+                    )}
+                    {commandButton.type == "bypass" ? (
+                      <Bypass commandButton={commandButton} key={index} />
+                    ) : commandButton.type == "sound" ? (
+                      <SoundCommand commandButton={commandButton} key={index} />
+                    ) : commandButton.type == "video" ||
+                      commandButton.type == "image" ? (
+                      <MediaCommand
+                        commandButton={commandButton}
+                        key={index}
+                        sendMedia={sendMedia}
+                      />
+                    ) : (
+                      <></>
+                    )}
+                  </div>
+                </>
+              ))
+            ) : (
+              <></>
+            )
+          )}
+        </div>
       </div>
     </div>
   );
