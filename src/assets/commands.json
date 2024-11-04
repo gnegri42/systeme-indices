@@ -1,20 +1,25 @@
 [
   {
     "step": "1",
-    "step_name": "Première partie",
+    "step_name": "TELEPORTEUR",
     "buttons": [
-      {
-        "name": "Bypass1",
-        "type": "bypass",
-        "description": "la description et blablabla",
-        "endpoint-state": "actif",
-        "ip": "192.168.1.101"
-      },
-      {
-        "name": "Son entrée joueurs ",
+           {
+        "name": "ALLUMAGE ",
         "type": "sound",
-        "description": "la description et blablabla",
-        "src": "/sound/cymbal.wav"
+        "description": "son allumage machine",
+        "src": "/sound/allumage.wav"
+      },
+ {
+        "name": "DEFAUT ",
+        "type": "sound",
+        "description": "son Défaut machine",
+        "src": "/sound/défaut.wav"
+      },
+ {
+        "name": "TELEPORTATION ",
+        "type": "sound",
+        "description": "son téléportation",
+        "src": "/sound/téléportation.wav"
       },
       {
         "name": "Image Sivrage",
@@ -26,20 +31,14 @@
   },
   {
     "step": "2",
-    "step_name": "Seconde partie",
+    "step_name": "JERUSALEM",
     "buttons": [
+     
       {
-        "name": "Bypass2",
-        "type": "bypass",
-        "description": "la description et blablabla",
-        "endpoint-state": "actif",
-        "ip": "192.168.1.101"
-      },
-      {
-        "name": "Son sortie joueurs ",
+        "name": "EBOULEMENT ",
         "type": "sound",
-        "description": "la description et blablabla",
-        "src": "/sound/cymbal.wav"
+        "description": "son d'éboulement",
+        "src": "/sound/éboulement.wav"
       },
       {
         "name": "Video non urgence",
