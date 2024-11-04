@@ -3,18 +3,60 @@
     "step": "1",
     "step_name": "TELEPORTEUR",
     "buttons": [
-           {
+{
+        "name": "Alimentation Requise ",
+        "type": "video",
+        "description": "demande les cristaux",
+        "src": "/video/vidéo 1.mp4"
+      },           
+{
         "name": "ALLUMAGE ",
         "type": "sound",
         "description": "son allumage machine",
         "src": "/sound/allumage.wav"
       },
+{
+        "name": "Pression hydraulique ",
+        "type": "video",
+        "description": "rétablir les vannes",
+        "src": "/video/vidéo 2.mp4"
+      },   
+{
+        "name": "TEST AVC ",
+        "type": "video",
+        "description": "TEST AVC",
+        "src": "/video/vidéo 3.mp4"
+      },   
+{
+        "name": "COORDONEES GPS ",
+        "type": "video",
+        "description": "saisir les coordonnées de voyage",
+        "src": "/video/vidéo 4.mp4"
+      }, 
  {
         "name": "DEFAUT ",
         "type": "sound",
         "description": "son Défaut machine",
         "src": "/sound/défaut.wav"
       },
+{
+        "name": "FUITE DEFAUT",
+        "type": "video",
+        "description": "Réparez la fuite",
+        "src": "/video/vidéo 5.mp4"
+      }, 
+{
+        "name": "COORDONEES GPS 2 ",
+        "type": "video",
+        "description": "lancer la téléportation",
+        "src": "/video/vidéo 6.mp4"
+      }, 
+{
+        "name": "TELEPORTATION Video ",
+        "type": "video",
+        "description": "TELEPORTATION Video",
+        "src": "/video/vidéo 7.mp4"
+      }, 
  {
         "name": "TELEPORTATION ",
         "type": "sound",
@@ -40,10 +82,22 @@
         "description": "son d'éboulement",
         "src": "/sound/éboulement.wav"
       },
-      {
-        "name": "Video non urgence",
+{
+        "name": "TELEPORTATION Video ",
         "type": "video",
-        "description": "la description et blablabla",
+        "description": "TELEPORTATION Video",
+        "src": "/video/vidéo 7.mp4"
+      }, 
+{
+        "name": "DEFAUT ",
+        "type": "sound",
+        "description": "son Défaut machine",
+        "src": "/sound/défaut.wav"
+      },
+      {
+        "name": "ALERTE",
+        "type": "video",
+        "description": "activez protocole d'urgence",
         "src": "/video/background-video.mp4"
       }
     ]
