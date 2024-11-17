@@ -49,7 +49,7 @@ const TabletPage = () => {
       try {
         const messageData = JSON.parse(data);
         console.log("Received message:", messageData);
-        setLoading(false);
+     //   setLoading(false);
         if (messageData.type == "chat") {
           addToMessages(messageData);
           setMedia(null);
