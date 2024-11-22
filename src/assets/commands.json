@@ -28,6 +28,12 @@
         "src": "/video/vidéo 3.mp4"
       },   
 {
+        "name": "Couleurs",
+        "type": "video",
+        "description": "TEST V",
+        "src": "/video/couleurs hard.mov"
+      },   
+{
         "name": "COORDONEES GPS ",
         "type": "video",
         "description": "saisir les coordonnées de voyage",
