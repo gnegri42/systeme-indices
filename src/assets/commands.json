@@ -31,31 +31,13 @@
         "name": "Couleurs",
         "type": "video",
         "description": "TEST V",
-        "src": "/video/couleurs hard.mov"
+        "src": "/video/couleursMP4.mov"
       },   
 {
         "name": "COORDONEES GPS ",
         "type": "video",
         "description": "saisir les coordonnées de voyage",
         "src": "/video/vidéo 4.mp4"
-      }, 
- {
-        "name": "DEFAUT ",
-        "type": "sound",
-        "description": "son Défaut machine",
-        "src": "/sound/défaut.wav"
-      },
-{
-        "name": "FUITE DEFAUT",
-        "type": "video",
-        "description": "Réparez la fuite",
-        "src": "/video/vidéo 5.mp4"
-      }, 
-{
-        "name": "COORDONEES GPS 2 ",
-        "type": "video",
-        "description": "lancer la téléportation",
-        "src": "/video/vidéo 6.mp4"
       }, 
 {
         "name": "TELEPORTATION Video ",
@@ -69,12 +51,6 @@
         "description": "son téléportation",
         "src": "/sound/téléportation.wav"
       },
-      {
-        "name": "Image Sivrage",
-        "type": "image",
-        "description": "la description et blablabla",
-        "src": "/img/sivrage_avatar.png"
-      }
     ]
   },
   {
@@ -94,7 +70,7 @@
         "description": "TELEPORTATION Video",
         "src": "/video/vidéo 7.mp4"
       }, 
-{
+      {
         "name": "DEFAUT ",
         "type": "sound",
         "description": "son Défaut machine",
