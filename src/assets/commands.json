@@ -3,83 +3,82 @@
     "step": "1",
     "step_name": "TELEPORTEUR",
     "buttons": [
-{
-        "name": "Alimentation Requise ",
+      {
+        "name": "Alimentation Requise",
         "type": "video",
-        "description": "demande les cristaux",
-        "src": "/video/vidéo 1.mp4"
-      },           
-{
-        "name": "ALLUMAGE ",
+        "description": "Demande les cristaux",
+        "src": "/video/video1.mp4"
+      },
+      {
+        "name": "ALLUMAGE",
         "type": "sound",
-        "description": "son allumage machine",
+        "description": "Son d'allumage de la machine",
         "src": "/sound/allumage.wav"
       },
-{
-        "name": "Pression hydraulique ",
+      {
+        "name": "Pression Hydraulique",
         "type": "video",
-        "description": "rétablir les vannes",
-        "src": "/video/vidéo 2.mp4"
-      },   
-{
-        "name": "TEST AVC ",
+        "description": "Rétablir les vannes",
+        "src": "/video/video2.mp4"
+      },
+      {
+        "name": "TEST AVC",
         "type": "video",
-        "description": "TEST AVC",
-        "src": "/video/vidéo 3.mp4"
-      },   
-{
+        "description": "Test automatique",
+        "src": "/video/video3.mp4"
+      },
+      {
         "name": "Couleurs",
         "type": "video",
-        "description": "TEST V",
-        "src": "/video/couleursMP4.mov"
-      },   
-{
-        "name": "COORDONEES GPS ",
-        "type": "video",
-        "description": "saisir les coordonnées de voyage",
-        "src": "/video/vidéo 4.mp4"
-      }, 
-{
-        "name": "TELEPORTATION Video ",
-        "type": "video",
-        "description": "TELEPORTATION Video",
-        "src": "/video/vidéo 7.mp4"
-      }, 
- {
-        "name": "TELEPORTATION ",
-        "type": "sound",
-        "description": "son téléportation",
-        "src": "/sound/téléportation.wav"
+        "description": "Test des couleurs",
+        "src": "/video/couleursMP4.mp4"
       },
+      {
+        "name": "Coordonnees GPS",
+        "type": "video",
+        "description": "Saisir les coordonnées de voyage",
+        "src": "/video/video4.mp4"
+      },
+      {
+        "name": "TELEPORTATION Video",
+        "type": "video",
+        "description": "Vidéo de téléportation",
+        "src": "/video/video7.mp4"
+      },
+      {
+        "name": "TELEPORTATION",
+        "type": "sound",
+        "description": "Son de téléportation",
+        "src": "/sound/teleportation.wav"
+      }
     ]
   },
   {
     "step": "2",
     "step_name": "JERUSALEM",
     "buttons": [
-     
       {
-        "name": "EBOULEMENT ",
+        "name": "Eboulement",
         "type": "sound",
-        "description": "son d'éboulement",
-        "src": "/sound/éboulement.wav"
-      },
-{
-        "name": "TELEPORTATION Video ",
-        "type": "video",
-        "description": "TELEPORTATION Video",
-        "src": "/video/vidéo 7.mp4"
-      }, 
-      {
-        "name": "DEFAUT ",
-        "type": "sound",
-        "description": "son Défaut machine",
-        "src": "/sound/défaut.wav"
+        "description": "Son d'éboulement",
+        "src": "/sound/eboulement.wav"
       },
       {
-        "name": "ALERTE",
+        "name": "TELEPORTATION Video",
         "type": "video",
-        "description": "activez protocole d'urgence",
+        "description": "Vidéo de téléportation",
+        "src": "/video/video7.mp4"
+      },
+      {
+        "name": "Defaut",
+        "type": "sound",
+        "description": "Son de défaut de la machine",
+        "src": "/sound/defaut.wav"
+      },
+      {
+        "name": "Alerte",
+        "type": "video",
+        "description": "Activez le protocole d'urgence",
         "src": "/video/background-video.mp4"
       }
     ]
