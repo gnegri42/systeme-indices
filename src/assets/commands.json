@@ -79,7 +79,7 @@
         "name": "Alerte",
         "type": "video",
         "description": "Activez le protocole d'urgence",
-        "src": "/video/alerte"
+        "src": "/video/alerte.mp4"
       }
     ]
   }
