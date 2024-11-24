@@ -7,7 +7,7 @@
         "name": "Alimentation Requise",
         "type": "video",
         "description": "Demande les cristaux",
-        "src": "/video/video1.mp4"
+        "src": "/video/vidéo 1.mp4"
       },
       {
         "name": "ALLUMAGE",
@@ -19,13 +19,13 @@
         "name": "Pression Hydraulique",
         "type": "video",
         "description": "Rétablir les vannes",
-        "src": "/video/video2.mp4"
+        "src": "/video/vidéo 2.mp4"
       },
       {
         "name": "TEST AVC",
         "type": "video",
         "description": "Test automatique",
-        "src": "/video/video3.mp4"
+        "src": "/video/vidéo 3.mp4"
       },
       {
         "name": "Couleurs",
@@ -37,19 +37,19 @@
         "name": "Coordonnees GPS",
         "type": "video",
         "description": "Saisir les coordonnées de voyage",
-        "src": "/video/video4.mp4"
+        "src": "/video/vidéo 4.mp4"
       },
       {
         "name": "TELEPORTATION Video",
         "type": "video",
         "description": "Vidéo de téléportation",
-        "src": "/video/video7.mp4"
+        "src": "/video/vidéo 7.mp4"
       },
       {
         "name": "TELEPORTATION",
         "type": "sound",
         "description": "Son de téléportation",
-        "src": "/sound/teleportation.wav"
+        "src": "/sound/téléportation.wav"
       }
     ]
   },
@@ -61,25 +61,25 @@
         "name": "Eboulement",
         "type": "sound",
         "description": "Son d'éboulement",
-        "src": "/sound/eboulement.wav"
+        "src": "/sound/éboulement.wav"
       },
       {
         "name": "TELEPORTATION Video",
         "type": "video",
         "description": "Vidéo de téléportation",
-        "src": "/video/video7.mp4"
+        "src": "/video/vidéo 7.mp4"
       },
       {
         "name": "Defaut",
         "type": "sound",
         "description": "Son de défaut de la machine",
-        "src": "/sound/defaut.wav"
+        "src": "/sound/défaut.wav"
       },
       {
         "name": "Alerte",
         "type": "video",
         "description": "Activez le protocole d'urgence",
-        "src": "/video/background-video.mp4"
+        "src": "/video/alerte"
       }
     ]
   }
