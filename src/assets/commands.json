@@ -31,7 +31,7 @@
         "name": "Couleurs",
         "type": "video",
         "description": "Test des couleurs",
-        "src": "/video/couleursMP4.mp4"
+        "src": "/video/couleur2.mp4"
       },
       {
         "name": "Coordonnees GPS",
