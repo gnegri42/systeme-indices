@@ -49,7 +49,6 @@ const TabletPage = () => {
       try {
         const messageData = JSON.parse(data);
         console.log("Received message:", messageData);
-        setLoading(false);
         if (messageData.type == "chat") {
           addToMessages(messageData);
           setMedia(null);
@@ -83,6 +82,7 @@ const TabletPage = () => {
    */
   function addToMessages(message) {
     setMessages((prevMessages) => [...prevMessages, message]);
+    console.log("MESSAGE ADDED");
   }
 
   return (

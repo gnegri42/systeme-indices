@@ -54,8 +54,6 @@ const PlayerPage = () => {
         if (messageData.type == "chat") {
           addToMessages(messageData);
           setMedia(null);
-        } else if (messageData.type == "media") {
-          setMedia(messageData.content);
         } else if (messageData.type == "reset-chat") {
           setMessages([]);
         }
@@ -105,7 +103,6 @@ const PlayerPage = () => {
       <video autoPlay muted loop id="background-video">
         <source src={video} type="video/mp4" />
       </video>
-      {media ? <MediaDisplay media={media} /> : <></>}
       <div className="player-page-content">
         {media ? (
           <></>
