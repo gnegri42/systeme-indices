@@ -54,8 +54,6 @@ const PlayerPage = () => {
         if (messageData.type == "chat") {
           addToMessages(messageData);
           setMedia(null);
-        //} else if (messageData.type == "media") {
-         // setMedia(messageData.content);
         } else if (messageData.type == "reset-chat") {
           setMessages([]);
         }
