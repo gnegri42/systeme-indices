@@ -110,6 +110,7 @@ const GameMasterPage = () => {
           onSend={sendMessage}
           textarea={false}
           sendButton={false}
+          playJingle={true}
         />
         <button onClick={() => resetChat()}>Reset Chat</button>
       </div>

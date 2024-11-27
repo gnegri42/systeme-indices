@@ -14,6 +14,7 @@ const TabletPage = () => {
   useDisableShortcuts();
 
   const [messages, setMessages] = useState([]);
+  const [tempMedia, setTempMedia] = useState(null);
   const [media, setMedia] = useState(null);
   const [ws, setWs] = useState(null);
 
@@ -30,6 +31,11 @@ const TabletPage = () => {
         messageBody.scrollHeight - messageBody.clientHeight;
     }
   }, [messages]);
+
+  // A chaque changement de tempMedia on modifie Media
+  useEffect(() => {
+    setMedia(tempMedia);
+  }, [tempMedia]);
 
   /**
    * Gestion de la réception des messages avec Websocket
@@ -53,8 +59,9 @@ const TabletPage = () => {
           addToMessages(messageData);
           setMedia(null);
         } else if (messageData.type == "media") {
+          // Utilisation de tempMedia pour pouvoir envoyer des medias l'un après l'autre en remettant media à null
+          setTempMedia(messageData.content);
           setMedia(null);
-          setMedia(messageData.content);
         } else if (messageData.type == "reset-chat") {
           setMessages([]);
         }
