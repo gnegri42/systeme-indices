@@ -43,8 +43,10 @@ const GameMasterPage = () => {
       }
       try {
         const messageData = JSON.parse(data);
-        console.log("Received message:", messageData);
-        setMessages((prevMessages) => [...prevMessages, messageData]);
+        if (messageData.type == "chat" || messageData.type == "playerchat") {
+          console.log("Received message:", messageData);
+          setMessages((prevMessages) => [...prevMessages, messageData]);
+        }
       } catch (error) {
         console.error("Error parsing message as JSON:", error);
       }
