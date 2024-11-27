@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./SoundCommand.css";
 import { Howl, Howler } from "howler";
+import soundIcon from "../../../assets/icons/sound-icon.png";
 
 const SoundCommand = ({ commandButton }) => {
   //   const [showControls, setShowControls] = useState(false);
@@ -20,12 +21,15 @@ const SoundCommand = ({ commandButton }) => {
       )}
       <div className="sound-command-content">
         <button
-          className="sound-command-button"
+          className="sound-command-button btn"
           onClick={() => {
             sound.play();
           }}
         >
-          {commandButton.name}
+          <span className="btn-content">
+            <img src={soundIcon} alt="Icone son" className="sound-icon" />
+            {commandButton.name}
+          </span>
         </button>
       </div>
     </div>

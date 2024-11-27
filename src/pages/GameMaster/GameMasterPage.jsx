@@ -11,6 +11,7 @@ import MediaCommand from "../../components/CommandsComponents/MediaCommand/Media
 import SoundCommand from "../../components/CommandsComponents/SoundCommand/SoundCommand";
 import ChronometerComponent from "../../components/ChronometerComponent/ChronometerComponent";
 import Nav from "../../components/NavComponent/NavComponent";
+import videoIcon from "../../assets/icons/video-icon.png";
 
 const GameMasterPage = () => {
   const [messages, setMessages] = useState([]);
@@ -105,7 +106,11 @@ const GameMasterPage = () => {
       <div className="gamemaster-clues">
         <ChronometerComponent />
         <ChatWindow messages={messages} />
-        <MessageInput onSend={sendMessage} textarea={true} />
+        <MessageInput
+          onSend={sendMessage}
+          textarea={false}
+          sendButton={false}
+        />
         <button onClick={() => resetChat()}>Reset Chat</button>
       </div>
       <div className="gamemaster-game-track">
@@ -116,11 +121,6 @@ const GameMasterPage = () => {
               commands.buttons.map((commandButton, index) => (
                 <>
                   <div className="command-container">
-                    {commandButton.type ? (
-                      <p className="command-type">{commandButton.type}</p>
-                    ) : (
-                      <></>
-                    )}
                     {commandButton.type == "bypass" ? (
                       <Bypass commandButton={commandButton} key={index} />
                     ) : commandButton.type == "sound" ? (

@@ -16,10 +16,15 @@
 .gamemaster-clues .messages-list {
   flex: 1;
   text-align: center;
-  padding: 50px 0px;
+  margin-top: 50px;
 }
 
 .gamemaster-clues .player-form textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.gamemaster-clues .player-form input {
   width: 100%;
   height: 100px;
 }
@@ -41,16 +46,16 @@
 }
 
 .gamemaster-commands {
-  display: flex;
-  flex-direction: column;
-  text-transform: initial;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 30px;
+  row-gap: 30px;
 }
 
 .command-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  text-align: center;
 }
 
 .command-type {

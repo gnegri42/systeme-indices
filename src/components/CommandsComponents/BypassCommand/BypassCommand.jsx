@@ -50,7 +50,7 @@ const Bypass = ({ commandButton }) => {
         <div className="bypass-description">{commandButton.description}</div>
       )}
       <div className="bypass-content">
-        <button className="bypass-button" onClick={activateBypass}>
+        <button className="bypass-button btn" onClick={activateBypass}>
           {commandButton.name}
         </button>
         <button className="ping-button" onClick={pingIp}>

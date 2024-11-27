@@ -91,8 +91,10 @@ const PlayerPage = () => {
    */
   function sendMessage(message) {
     if (ws && ws.readyState === WebSocket.OPEN) {
-      ws.send(JSON.stringify({ type: "chat", target: "gm", content: message }));
-      addToMessages({ type: "chat", target: "gm", content: message });
+      ws.send(
+        JSON.stringify({ type: "playerchat", target: "gm", content: message })
+      );
+      addToMessages({ type: "playerchat", target: "gm", content: message });
       setLoading(true);
     }
   }

@@ -53,6 +53,7 @@ const TabletPage = () => {
           addToMessages(messageData);
           setMedia(null);
         } else if (messageData.type == "media") {
+          setMedia(null);
           setMedia(messageData.content);
         } else if (messageData.type == "reset-chat") {
           setMessages([]);
@@ -82,7 +83,6 @@ const TabletPage = () => {
    */
   function addToMessages(message) {
     setMessages((prevMessages) => [...prevMessages, message]);
-    console.log("MESSAGE ADDED");
   }
 
   return (
