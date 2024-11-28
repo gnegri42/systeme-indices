@@ -4,7 +4,7 @@
     "step_name": "TELEPORTEUR",
     "buttons": [
  {
-        "name": "Alimentation Requise",
+        "name": "buzz",
         "type": "sound",
         "description": "Demande les cristaux",
         "src": "/sound/buzz.wav"
