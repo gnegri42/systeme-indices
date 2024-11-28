@@ -3,6 +3,12 @@
     "step": "1",
     "step_name": "TELEPORTEUR",
     "buttons": [
+ {
+        "name": "Alimentation Requise",
+        "type": "sound",
+        "description": "Demande les cristaux",
+        "src": "/sound/buzz.wav"
+      },
       {
         "name": "Alimentation Requise",
         "type": "video",
