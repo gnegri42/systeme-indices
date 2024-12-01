@@ -15,6 +15,12 @@
         "description": "Demande les cristaux",
         "src": "/video/vidéo 1.mp4"
       },
+ {
+        "name": "BIENVENUE",
+        "type": "sound",
+        "description": "Sivrage bienvenue",
+        "src": "/sound/Bonjour.wav"
+      },
       {
         "name": "ALLUMAGE",
         "type": "sound",
@@ -27,11 +33,23 @@
         "description": "Rétablir les vannes",
         "src": "/video/vidéo 2.mp4"
       },
+  {
+        "name": "son pression hydro",
+        "type": "sound",
+        "description": "son pression hydrolique",
+        "src": "/sound/pression hydro.wav"
+      },
       {
         "name": "TEST AVC",
         "type": "video",
         "description": "Test automatique",
         "src": "/video/vidéo 3.mp4"
+      },
+  {
+        "name": "SON test AVC",
+        "type": "sound",
+        "description": "Son test AVC",
+        "src": "/sound/test AVC.wav"
       },
       {
         "name": "Couleurs",
@@ -45,6 +63,18 @@
         "description": "Saisir les coordonnées de voyage",
         "src": "/video/vidéo 4.mp4"
       },
+  {
+        "name": "erreur coordonnées",
+        "type": "sound",
+        "description": "Erreur coordonées",
+        "src": "/sound/coordonnées mauvaises.wav"
+      },
+  {
+        "name": "Téléportation prête",
+        "type": "sound",
+        "description": "téléportation prête",
+        "src": "/sound/téléportation prête.wav"
+      },
       {
         "name": "TELEPORTATION Video",
         "type": "video",
@@ -57,6 +87,12 @@
         "description": "Son de téléportation",
         "src": "/sound/téléportation.wav"
       }
+  {
+        "name": "transfert OK",
+        "type": "sound",
+        "description": "transfert terminé",
+        "src": "/sound/transfert terminé.wav"
+      },
     ]
   },
   {
@@ -80,6 +116,12 @@
         "type": "sound",
         "description": "Son de défaut de la machine",
         "src": "/sound/défaut.wav"
+      },
+  {
+        "name": "protocole d'urgence",
+        "type": "sound",
+        "description": "protocole d'urgence",
+        "src": "/sound/protocole d'urgence.wav"
       },
       {
         "name": "Alerte",
