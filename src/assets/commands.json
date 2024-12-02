@@ -86,7 +86,7 @@
         "type": "sound",
         "description": "Son de téléportation",
         "src": "/sound/téléportation.wav"
-      }
+      },
   {
         "name": "transfert OK",
         "type": "sound",
