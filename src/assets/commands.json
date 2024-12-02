@@ -57,6 +57,22 @@
         "description": "Test des couleurs",
         "src": "/video/COULEUR2.mp4"
       },
+ {
+        "name": "TEST A ok",
+        "type": "sound",
+        "description": "Bille OK",
+        "src": "/sound/TEST A OK.wav"
+      }, {
+        "name": "TEST V OK",
+        "type": "sound",
+        "description": "BOUTONS COULEURS OK",
+        "src": "/sound/Test V ok.wav"
+      }, {
+        "name": "TEST C OK",
+        "type": "sound",
+        "description": "24657138 OK",
+        "src": "/sound/test C ok.wav"
+      },
       {
         "name": "Coordonnees GPS",
         "type": "video",
