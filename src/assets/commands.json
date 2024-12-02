@@ -1,7 +1,7 @@
 [
   {
     "step": "1",
-    "step_name": "TELEPORTEUR",
+    "step_name": "PARTIE 1",
     "buttons": [
       {
         "name": "buzz",
@@ -79,7 +79,13 @@
         "description": "Saisir les coordonnées de voyage",
         "src": "/video/vidéo 4.mp4"
       },
-      {
+    ]
+  },
+  {
+    "step": "2",
+    "step_name": "JERUSALEM",
+    "buttons": [
+ {
         "name": "erreur coordonnées",
         "type": "sound",
         "description": "Erreur coordonées",
@@ -108,13 +114,7 @@
         "type": "sound",
         "description": "transfert terminé",
         "src": "/sound/transfert terminé.wav"
-      }
-    ]
-  },
-  {
-    "step": "2",
-    "step_name": "JERUSALEM",
-    "buttons": [
+      },
       {
         "name": "Eboulement",
         "type": "sound",
