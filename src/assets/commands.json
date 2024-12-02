@@ -67,7 +67,7 @@
         "name": "erreur coordonnées",
         "type": "sound",
         "description": "Erreur coordonées",
-        "src": "/sound/coordonnées mauvaises.wav"
+        "src": "/sound/coordonées mauvaises.wav"
       },
       {
         "name": "Téléportation prête",
