@@ -61,7 +61,7 @@
         "name": "TEST A ok",
         "type": "sound",
         "description": "Bille OK",
-        "src": "/sound/TEST A OK.wav"
+        "src": "/sound/TEST A ok.wav"
       }, {
         "name": "TEST V OK",
         "type": "sound",
