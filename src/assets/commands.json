@@ -3,13 +3,7 @@
     "step": "1",
     "step_name": "PARTIE 1",
     "buttons": [
-      {
-        "name": "buzz",
-        "type": "sound",
-        "description": "Demande les cristaux",
-        "src": "/sound/buzz.wav"
-      },
-      {
+           {
         "name": "Alimentation Requise",
         "type": "video",
         "description": "Demande les cristaux",
@@ -98,12 +92,6 @@
         "src": "/sound/téléportation prête.wav"
       },
       {
-        "name": "TELEPORTATION Video",
-        "type": "video",
-        "description": "Vidéo de téléportation",
-        "src": "/video/vidéo 7.mp4"
-      },
-      {
         "name": "TELEPORTATION",
         "type": "sound",
         "description": "Son de téléportation",
@@ -114,18 +102,6 @@
         "type": "sound",
         "description": "transfert terminé",
         "src": "/sound/transfert terminé.wav"
-      },
-      {
-        "name": "Eboulement",
-        "type": "sound",
-        "description": "Son d'éboulement",
-        "src": "/sound/éboulement.wav"
-      },
-      {
-        "name": "TELEPORTATION Video",
-        "type": "video",
-        "description": "Vidéo de téléportation",
-        "src": "/video/vidéo 7.mp4"
       },
       {
         "name": "Defaut",
