@@ -49,7 +49,13 @@
         "name": "Couleurs",
         "type": "video",
         "description": "Test des couleurs",
-        "src": "/video/COULEUR2.mp4"
+        "src": "/video/Couleur2mp4.mp4"
+      },
+   {
+        "name": "Couleurs difficile",
+        "type": "video",
+        "description": "Test des couleurs",
+        "src": "/video/Couleur2mp4hard.mp4"
       },
  {
         "name": "TEST A ok",
