@@ -146,5 +146,5 @@
         "type": "sound",
         "description": "Liez vous au noyau",
         "src": "/sound/noyau subspatial.wav"
-      },
+      }
 ]
