@@ -3,18 +3,14 @@
     "step": "1",
     "step_name": "PARTIE 1",
     "buttons": [
+
            {
         "name": "Alimentation Requise",
         "type": "video",
-        "description": "Demande les cristaux",
+        "description": "5 cables 2 cristaux requis",
         "src": "/video/vidéo 1.mp4"
       },
-      {
-        "name": "BIENVENUE",
-        "type": "sound",
-        "description": "Sivrage bienvenue",
-        "src": "/sound/Bonjour.wav"
-      },
+     
       {
         "name": "ALLUMAGE",
         "type": "sound",
@@ -24,7 +20,7 @@
       {
         "name": "Pression Hydraulique",
         "type": "video",
-        "description": "Rétablir les vannes",
+        "description": "000001 000100 002000",
         "src": "/video/vidéo 2.mp4"
       },
       {
@@ -48,19 +44,19 @@
       {
         "name": "Couleurs",
         "type": "video",
-        "description": "Test des couleurs",
+        "description": "rvbjbrbrjb",
         "src": "/video/Couleur2mp4.mp4"
       },
    {
         "name": "Couleurs difficile",
         "type": "video",
-        "description": "Test des couleurs",
+        "description": "rvbjbrbrjb",
         "src": "/video/Couleur2mp4hard.mp4"
       },
  {
         "name": "TEST A ok",
         "type": "sound",
-        "description": "Bille OK",
+        "description": "Bille aimant OK",
         "src": "/sound/TEST A ok.wav"
       }, {
         "name": "TEST V OK",
@@ -94,7 +90,7 @@
       {
         "name": "Téléportation prête",
         "type": "sound",
-        "description": "téléportation prête",
+        "description": "31 46 02 N 35 12 47 E",
         "src": "/sound/téléportation prête.wav"
       },
       {
@@ -106,13 +102,13 @@
       {
         "name": "transfert OK",
         "type": "sound",
-        "description": "transfert terminé",
+        "description": "Bienvenue a Jérusalem",
         "src": "/sound/transfert terminé.wav"
       },
       {
         "name": "Defaut",
         "type": "sound",
-        "description": "Son de défaut de la machine",
+        "description": "Bruit défaut de la machine",
         "src": "/sound/défaut.wav"
       },
       {
@@ -128,5 +124,27 @@
         "src": "/video/alerte.mp4"
       }
     ]
-  }
+  },
+ {
+    "step": "3",
+    "step_name": "messages optionnels ",
+    "buttons": [
+ {
+        "name": "ALIMENTATION 50",
+        "type": "sound",
+        "description": "Alim 50%",
+        "src": "/sound/alimentation 50.wav"
+      },
+ {
+        "name": "MESSAGE",
+        "type": "sound",
+        "description": "Vous avez un nouveau message",
+        "src": "/sound/message.wav"
+      },
+ {
+        "name": "Noyau subspatial",
+        "type": "sound",
+        "description": "Liez vous au noyau",
+        "src": "/sound/noyau subspatial.wav"
+      },
 ]
