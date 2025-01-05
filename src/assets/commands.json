@@ -10,6 +10,12 @@
         "description": "5 cables 2 cristaux requis",
         "src": "/video/vidéo 1.mp4"
       },
+{
+        "name": "Bonjour",
+        "type": "sound",
+        "description": "message de bienvenue",
+        "src": "/sound/Bonjour.wav"
+      },
      
       {
         "name": "ALLUMAGE",
@@ -79,7 +85,7 @@
   },
   {
     "step": "2",
-    "step_name": "JERUSALEM",
+    "step_name": "partie 2",
     "buttons": [
  {
         "name": "erreur coordonnées",
@@ -133,13 +139,55 @@
         "name": "ALIMENTATION 50",
         "type": "sound",
         "description": "Alim 50%",
-        "src": "/sound/alimentation 50.wav"
+        "src": "/sound/alimentation_50.wav"
+      },
+       {
+        "name": "Indice pression hydro",
+        "type": "image",
+        "description": "indice boutons 6433",
+        "src": "/img/image pression.jpg"
       },
  {
         "name": "MESSAGE",
         "type": "sound",
         "description": "Vous avez un nouveau message",
         "src": "/sound/message.wav"
+      },
+ {
+        "name": "Indice pression hydro",
+        "type": "image",
+        "description": "indice boutons 6433",
+        "src": "/img/image pression.jpg"
+      },
+ {
+        "name": "Noyau subspatial",
+        "type": "sound",
+        "description": "Liez vous au noyau",
+        "src": "/sound/noyau subspatial.wav"
+      },
+{
+        "name": "Indice épée grotte",
+        "type": "image",
+        "description": "indice épée grotte",
+        "src": "/img/epee grotte.jpg"
+      },
+      {
+        "name": "Indice épée SABLE",
+        "type": "image",
+        "description": "indice épée SABLE",
+        "src": "/img/epee sable.jpg"
+      },
+      {
+        "name": "Indice odeurs",
+        "type": "image",
+        "description": "indice pierre odeurs",
+        "src": "/img/odeurs.jpg"
+      },
+      {
+        "name": "Indice odeurs",
+        "type": "image",
+        "description": "indice avec ordre !",
+        "src": "/img/odeurs facile.jpg"
       },
  {
         "name": "Noyau subspatial",
