@@ -139,7 +139,7 @@
         "name": "ALIMENTATION 50",
         "type": "sound",
         "description": "Alim 50%",
-        "src": "/sound/alimentation_50.wav"
+        "src": "/sound/alimentation _50.wav"
       },
        {
         "name": "Indice pression hydro",
@@ -154,10 +154,34 @@
         "src": "/sound/message.wav"
       },
  {
+        "name": "Indice cable bleu",
+        "type": "image",
+        "description": "CABLE BLEU",
+        "src": "/img/cable bleu.jpg"
+      },
+       {
+        "name": "Indice cristal caché",
+        "type": "image",
+        "description": "cristal dans le coin",
+        "src": "/img/cristal manquant.jpg"
+      },
+ {
         "name": "Indice pression hydro",
         "type": "image",
         "description": "indice boutons 6433",
         "src": "/img/image pression.jpg"
+      },
+ {
+        "name": "Indice BOLIVIE",
+        "type": "image",
+        "description": "indice Bolivie chiffre 6",
+        "src": "/img/bolivie.jpg"
+      },
+       {
+        "name": "Indice TURQUIE",
+        "type": "image",
+        "description": "indice Turquie chiffre 5",
+        "src": "/img/turquie.jpg"
       },
  {
         "name": "Noyau subspatial",
@@ -188,6 +212,18 @@
         "type": "image",
         "description": "indice avec ordre !",
         "src": "/img/odeurs facile.jpg"
+      },
+       {
+        "name": "Indice OFFRANDES TOILE",
+        "type": "image",
+        "description": "indice quantités sur toile",
+        "src": "/img/toile offrandes.jpg"
+      },
+ {
+        "name": "Indice CUBES A EMPILER",
+        "type": "image",
+        "description": "indice 7 cubes à monter",
+        "src": "/img/cubes.jpg"
       },
  {
         "name": "Noyau subspatial",
