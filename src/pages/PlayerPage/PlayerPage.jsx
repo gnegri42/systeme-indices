@@ -6,7 +6,6 @@ import useFullScreen from "../../hooks/FullScreen";
 import useDisableShortcuts from "../../hooks/DisableShortcuts";
 import "./PlayerPage.css";
 import video from "../../assets/background.mp4";
-import avatar from "../../assets/sivrage_avatar.png";
 import { mainUrl } from "../../config/config";
 
 const PlayerPage = () => {
