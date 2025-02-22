@@ -6,6 +6,7 @@ import useFullScreen from "../../hooks/FullScreen";
 import useDisableShortcuts from "../../hooks/DisableShortcuts";
 import "./TabletPage.css";
 import video from "../../assets/background.mp4";
+import avatar from "../../assets/sivrage_avatar.png";
 import { mainUrl } from "../../config/config";
 
 const TabletPage = () => {
