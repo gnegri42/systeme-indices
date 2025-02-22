@@ -75,6 +75,12 @@
         "description": "24657138 OK",
         "src": "/sound/test C ok.wav"
       },
+ {
+        "name": "BIPBIP MESSAGE",
+        "type": "sound",
+        "description": "jingle message",
+        "src": "/sound/jingle.mp3"
+      },
       {
         "name": "Coordonnees GPS",
         "type": "video",
@@ -111,6 +117,12 @@
         "description": "Bienvenue a Jérusalem",
         "src": "/sound/transfert terminé.wav"
       },
+{
+        "name": "BIPBIP MESSAGE",
+        "type": "sound",
+        "description": "jingle message",
+        "src": "/sound/jingle.mp3"
+      },
       {
         "name": "Defaut",
         "type": "sound",
@@ -140,6 +152,12 @@
         "type": "sound",
         "description": "Alim 50%",
         "src": "/sound/alimentation _50.wav"
+      },
+{
+        "name": "BIPBIP MESSAGE",
+        "type": "sound",
+        "description": "jingle message",
+        "src": "/sound/jingle.mp3"
       },
        {
         "name": "Indice pression hydro",
