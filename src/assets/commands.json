@@ -47,6 +47,12 @@
         "description": "Son test AVC",
         "src": "/sound/test AVC.wav"
       },
+ {
+        "name": "INDICE RESET TEST V",
+        "type": "sound",
+        "description": "lisez message test v",
+        "src": "/sound/message départ test v.wav"
+      },
       {
         "name": "Couleurs",
         "type": "video",
@@ -74,6 +80,12 @@
         "type": "sound",
         "description": "24657138 OK",
         "src": "/sound/test C ok.wav"
+      },
+ {
+        "name": "tests AVC complétés",
+        "type": "sound",
+        "description": "tests AVC achevés",
+        "src": "/sound/tests acheves.wav"
       },
  {
         "name": "BIPBIP MESSAGE",
@@ -135,6 +147,12 @@
         "description": "sivrage is waiting",
         "src": "/video/waiting.mp4"
       },
+ {
+        "name": "RETOUR IMPOSSIBLE",
+        "type": "sound",
+        "description": "pas sans la couronne",
+        "src": "/sound/retour impossible.wav"
+      },
       {
         "name": "Defaut",
         "type": "sound",
@@ -146,6 +164,18 @@
         "type": "sound",
         "description": "protocole d'urgence",
         "src": "/sound/protocole d'urgence.wav"
+      },
+ {
+        "name": "PROTOCOLE ACTIVE",
+        "type": "sound",
+        "description": "Activation du protocole d'urgence",
+        "src": "/sound/protocole active.wav"
+      },
+ {
+        "name": "SORTIE ouverture trappe",
+        "type": "sound",
+        "description": "ouverture sortie d'urgence",
+        "src": "/sound/sortie.wav"
       },
       {
         "name": "Alerte",
