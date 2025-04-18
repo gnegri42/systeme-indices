@@ -279,6 +279,24 @@
         "description": "indice 7 cubes à monter",
         "src": "/img/cubes.jpg"
       },
+{
+        "name": "QUESTION SECRETE",
+        "type": "image",
+        "description": "AFFICHE QUESTION SECRETE",
+        "src": "/img/question secrete.jpg"
+      },
+{
+        "name": "Indice question cadre caché",
+        "type": "image",
+        "description": "montre le cadre avec la devise cachée",
+        "src": "/img/question cache.jpg"
+      },
+{
+        "name": "Indice question cadre visible",
+        "type": "image",
+        "description": "montre le cadre avec la devise visible",
+        "src": "/img/question finale.jpg"
+      },
  {
         "name": "Noyau subspatial",
         "type": "sound",
