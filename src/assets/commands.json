@@ -226,6 +226,18 @@
         "src": "/img/image pression.jpg"
       },
  {
+        "name": "ouvrez le hublot",
+        "type": "image",
+        "description": "ouvrez le hublot",
+        "src": "/img/ouvrez hublot.jpg"
+      },
+ {
+        "name": "affiche symboles TEST A",
+        "type": "image",
+        "description": "affiche symboles TEST A",
+        "src": "/img/symboles test a.jpg"
+      },
+ {
         "name": "Indice BOLIVIE",
         "type": "image",
         "description": "indice Bolivie chiffre 6",
@@ -236,12 +248,6 @@
         "type": "image",
         "description": "indice Turquie chiffre 5",
         "src": "/img/turquie.jpg"
-      },
- {
-        "name": "Noyau subspatial",
-        "type": "sound",
-        "description": "Liez vous au noyau",
-        "src": "/sound/noyau subspatial.wav"
       },
 {
         "name": "Indice épée grotte",
