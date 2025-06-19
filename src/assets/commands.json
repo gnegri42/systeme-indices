@@ -100,10 +100,10 @@
         "src": "/video/waiting.mp4"
       },
       {
-        "name": "Coordonnees GPS",
+        "name": "Matrice de transfert",
         "type": "video",
-        "description": "Saisir les coordonnées de voyage",
-        "src": "/video/vidéo 4.mp4"
+        "description": "alignez les curseurs",
+        "src": "/video/matrice.mp4"
       }
     ]
   },
