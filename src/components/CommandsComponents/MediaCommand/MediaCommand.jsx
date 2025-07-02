@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./MediaCommand.css";
 import videoIcon from "../../../assets/icons/video-icon.png";
+import imageIcon from "../../../assets/icons/image-icon.svg";
 
 const MediaCommand = ({ commandButton, sendMedia }) => {
   const [state, setState] = useState(false);
@@ -34,7 +35,11 @@ const MediaCommand = ({ commandButton, sendMedia }) => {
           onClick={playMedia}
         >
           <span className="btn-content">
-            <img src={videoIcon} alt="Icone son" className="video-icon" />
+            {commandButton.type == "video" ? (
+              <img src={videoIcon} alt="Icone média" className="media-icon" />
+            ) : (
+              <img src={imageIcon} alt="Icone image" className="media-icon" />
+            )}
             {commandButton.name}
           </span>
         </button>
