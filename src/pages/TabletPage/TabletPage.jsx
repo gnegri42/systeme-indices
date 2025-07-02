@@ -55,15 +55,21 @@ const TabletPage = () => {
       try {
         const messageData = JSON.parse(data);
         console.log("Received message:", messageData);
-        if (messageData.type == "chat") {
-          addToMessages(messageData);
-          setMedia(null);
-        } else if (messageData.type == "media") {
-          // Utilisation de tempMedia pour pouvoir envoyer des medias l'un après l'autre en remettant media à null
-          setTempMedia(messageData.content);
-          setMedia(null);
-        } else if (messageData.type == "reset-chat") {
-          setMessages([]);
+        // On traite le message uniquement si la page est destinataire
+        if (messageData.target == "tablet" || messageData.target == "all") {
+          if (messageData.type == "chat") {
+            addToMessages(messageData);
+            setTempMedia(null);
+            setMedia(null);
+          } else if (messageData.type == "media") {
+            // Utilisation de tempMedia pour pouvoir envoyer des medias l'un après l'autre en remettant media à null
+            console.log("MEDIA RECEIVED : " + messageData.content);
+            setTempMedia(messageData.content);
+            setMedia(null);
+            setMessages([]);
+          } else if (messageData.type == "reset-chat") {
+            setMessages([]);
+          }
         }
       } catch (error) {
         console.error("Error parsing message as JSON:", error);

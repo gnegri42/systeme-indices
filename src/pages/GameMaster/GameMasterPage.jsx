@@ -18,6 +18,7 @@ const GameMasterPage = () => {
   const [ws, setWs] = useState(null);
   const WS_URL = `ws://${mainUrl}:8080`;
   const [stepToShow, setStepToShow] = useState("1");
+  const [targetOverride, setTargetOverride] = useState(null);
 
   useEffect(() => {
     if (messages.length > 4) {
@@ -78,8 +79,11 @@ const GameMasterPage = () => {
    * Envoie le message au server avec Websocket et l'ajoute dans la liste pour l'afficher
    * @param {string} text
    */
-  function sendMessage(text) {
-    const messageToSend = { type: "chat", target: "player", content: text };
+  function sendMessage(text, target) {
+    if (targetOverride) {
+      target = targetOverride;
+    }
+    const messageToSend = { type: "chat", target: target, content: text };
     ws.send(JSON.stringify(messageToSend));
     addToMessages(messageToSend);
   }
@@ -90,7 +94,7 @@ const GameMasterPage = () => {
    */
   function sendMedia(media) {
     ws.send(
-      JSON.stringify({ type: "media", target: "player", content: media })
+      JSON.stringify({ type: "media", target: "tablet", content: media })
     );
   }
 
@@ -99,15 +103,27 @@ const GameMasterPage = () => {
    * Envoie l'information au serveur pour les supprimer ailleurs si besoin
    */
   function resetChat() {
-    ws.send(JSON.stringify({ type: "reset-chat", target: "player" }));
+    ws.send(JSON.stringify({ type: "reset-chat", target: "all" }));
     setMessages([]);
   }
+
+  const handleCheckboxChange = (event) => {
+    setTargetOverride(event.target.checked ? "player" : null);
+  };
 
   return (
     <div id="gamemaster-page">
       <div className="gamemaster-clues">
         <ChronometerComponent />
         <ChatWindow messages={messages} />
+        <label>
+          <input
+            type="checkbox"
+            checked={targetOverride === "player"}
+            onChange={handleCheckboxChange}
+          />
+          Uniquement écran player
+        </label>
         <MessageInput
           onSend={sendMessage}
           textarea={false}

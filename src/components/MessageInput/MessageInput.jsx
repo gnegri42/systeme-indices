@@ -11,6 +11,7 @@ const MessageInput = ({
   playJingle = false,
 }) => {
   const [text, setText] = useState("");
+  const [target, setTarget] = useState("all");
   // Si on joue le jingle, on crée une instance de Howler, sinon on ne fait rien
   var indiceSound = playJingle
     ? new Howl({
@@ -24,7 +25,7 @@ const MessageInput = ({
    */
   const handleSend = (e) => {
     e.preventDefault();
-    onSend(text);
+    onSend(text, target);
     setText("");
     if (playJingle && indiceSound != null) {
       indiceSound.play();

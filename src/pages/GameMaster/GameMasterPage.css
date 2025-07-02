@@ -11,6 +11,7 @@
 .gamemaster-clues {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .gamemaster-clues .messages-list {
@@ -34,6 +35,7 @@
   border-left-style: solid;
   border-left-color: currentcolor;
   padding-left: 20px;
+  overflow: scroll;
 }
 
 .player-form button {

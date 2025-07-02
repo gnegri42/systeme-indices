@@ -49,13 +49,16 @@ const PlayerPage = () => {
       }
       try {
         const messageData = JSON.parse(data);
-        console.log("Received message:", messageData);
-        setLoading(false);
-        if (messageData.type == "chat") {
-          addToMessages(messageData);
-          setMedia(null);
-        } else if (messageData.type == "reset-chat") {
-          setMessages([]);
+        // On traite le message uniquement si la page est destinataire
+        if (messageData.target == "player" || messageData.target == "all") {
+          console.log("Received message:", messageData);
+          setLoading(false);
+          if (messageData.type == "chat") {
+            addToMessages(messageData);
+            setMedia(null);
+          } else if (messageData.type == "reset-chat") {
+            setMessages([]);
+          }
         }
       } catch (error) {
         console.error("Error parsing message as JSON:", error);

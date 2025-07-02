@@ -6,7 +6,7 @@ function Nav({ setStepToShow, Commands }) {
     <div className="nav-container">
       <ul className="nav">
         {Commands.map((commands, index) => (
-          <li>
+          <li className="nav-item">
             <a
               onClick={() => {
                 {
