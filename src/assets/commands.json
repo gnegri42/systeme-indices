@@ -87,6 +87,12 @@
         "description": "tests AVC achevés",
         "src": "/sound/tests acheves.wav"
       },
+  {
+        "name": "Matrice de transfert",
+        "type": "video",
+        "description": "alignez les curseurs",
+        "src": "/video/matrice.mp4"
+      },
  {
         "name": "BIPBIP MESSAGE",
         "type": "sound",
@@ -100,10 +106,10 @@
         "src": "/video/waiting.mp4"
       },
       {
-        "name": "Matrice de transfert",
+        "name": "Coordonnées GPS",
         "type": "video",
-        "description": "alignez les curseurs",
-        "src": "/video/matrice.mp4"
+        "description": "saisissez les coordonées",
+        "src": "/video/coordonnées.mp4"
       }
     ]
   },
@@ -290,6 +296,12 @@
         "type": "image",
         "description": "indice 7 cubes à monter",
         "src": "/img/cubes.jpg"
+      },
+{
+        "name": "LASER OEIL",
+        "type": "image",
+        "description": "visez les yeux ",
+        "src": "/img/oeil.jpg"
       },
 {
         "name": "QUESTION SECRETE",
