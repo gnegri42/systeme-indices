@@ -89,9 +89,9 @@
       },
   {
         "name": "Matrice de transfert",
-        "type": "video",
+        "type": "image",
         "description": "alignez les curseurs",
-        "src": "/video/matrice.mp4"
+        "src": "/img/matrice.jpg"
       },
  {
         "name": "BIPBIP MESSAGE",
@@ -188,6 +188,12 @@
         "type": "video",
         "description": "Activez le protocole d'urgence",
         "src": "/video/alerte.mp4"
+      },
+ {
+        "name": "SORTIE",
+        "type": "video",
+        "description": "regardez, par là !",
+        "src": "/video/sortie.mp4"
       }
     ]
   },
