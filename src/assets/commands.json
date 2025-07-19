@@ -1,9 +1,14 @@
 [
   {
     "step": "1",
-    "step_name": "PARTIE 1",
+    "step_name": "ALIMENTATION ET PRESSION HYDRO",
     "buttons": [
-
+{
+        "name": "BIPBIP MESSAGE",
+        "type": "sound",
+        "description": "jingle message",
+        "src": "/sound/jingle.mp3"
+      },
            {
         "name": "Alimentation Requise",
         "type": "video",
@@ -16,7 +21,30 @@
         "description": "message de bienvenue",
         "src": "/sound/Bonjour.wav"
       },
-     
+      {
+        "name": "ALIMENTATION 50",
+        "type": "sound",
+        "description": "Alim 50%",
+        "src": "/sound/alimentation _50.wav"
+      },
+ {
+        "name": "MESSAGE",
+        "type": "sound",
+        "description": "Vous avez un nouveau message",
+        "src": "/sound/message.wav"
+      },
+ {
+        "name": "Indice cable bleu",
+        "type": "image",
+        "description": "CABLE BLEU",
+        "src": "/img/cable bleu.jpg"
+      },
+       {
+        "name": "Indice cristal caché",
+        "type": "image",
+        "description": "cristal dans le coin",
+        "src": "/img/cristal manquant.jpg"
+      },
       {
         "name": "ALLUMAGE",
         "type": "sound",
@@ -35,6 +63,12 @@
         "description": "son pression hydrolique",
         "src": "/sound/pression hydro.wav"
       },
+ {
+        "name": "Indice pression hydro",
+        "type": "image",
+        "description": "indice boutons 6433",
+        "src": "/img/image pression.jpg"
+      },
       {
         "name": "TEST AVC",
         "type": "video",
@@ -42,16 +76,22 @@
         "src": "/video/vidéo 3.mp4"
       },
       {
-        "name": "SON test AVC",
+        "name": "SON PRESSION OK",
         "type": "sound",
         "description": "Son test AVC",
         "src": "/sound/test AVC.wav"
+}
+]
       },
  {
-        "name": "INDICE RESET TEST V",
+    "step": "2",
+    "step_name": "TEST AVC + transfert",
+    "buttons": [
+ {
+        "name": "BIPBIP MESSAGE",
         "type": "sound",
-        "description": "lisez message test v",
-        "src": "/sound/message départ test v.wav"
+        "description": "jingle message",
+        "src": "/sound/jingle.mp3"
       },
       {
         "name": "Couleurs",
@@ -65,6 +105,43 @@
         "description": "rvbjbrbrjb",
         "src": "/video/Couleur2mp4hard.mp4"
       },
+ {
+        "name": "ouvrez le hublot",
+        "type": "image",
+        "description": "ouvrez le hublot",
+        "src": "/img/ouvrez hublot.jpg"
+      },
+ {
+        "name": "affiche symboles TEST A",
+        "type": "image",
+        "description": "affiche symboles TEST A",
+        "src": "/img/symboles test a.jpg"
+      },
+{
+        "name": "INDICE RESET TEST V",
+        "type": "sound",
+        "description": "lisez message test v",
+        "src": "/sound/message départ test v.wav"
+      },
+ {
+        "name": "Indice BOLIVIE",
+        "type": "image",
+        "description": "indice Bolivie chiffre 6",
+        "src": "/img/bolivie.jpg"
+      },
+       {
+        "name": "Indice TURQUIE",
+        "type": "image",
+        "description": "indice Turquie chiffre 5",
+        "src": "/img/turquie.jpg"
+      },
+  {
+        "name": "Solution ENGRENAGES",
+        "type": "image",
+        "description": "Solution des ENGRENAGES",
+        "src": "/img/solution_matrice.jpg"
+      },
+ 
  {
         "name": "TEST A ok",
         "type": "sound",
@@ -88,37 +165,19 @@
         "src": "/sound/tests acheves.wav"
       },
   {
-        "name": "Matrice de transfert",
+        "name": "ENGRENAGES",
         "type": "image",
         "description": "alignez les curseurs",
         "src": "/img/matrice.jpg"
-      },
- {
-        "name": "BIPBIP MESSAGE",
-        "type": "sound",
-        "description": "jingle message",
-        "src": "/sound/jingle.mp3"
-      },
-   {
-        "name": "en attente",
-        "type": "video",
-        "description": "sivrage is waiting",
-        "src": "/video/waiting.mp4"
       },
       {
         "name": "Coordonnées GPS",
         "type": "video",
         "description": "saisissez les coordonées",
         "src": "/video/vidéo 4.mp4"
-      }
-    ]
-  },
-  {
-    "step": "2",
-    "step_name": "partie 2",
-    "buttons": [
- {
-        "name": "erreur coordonnées",
+      }, 
+       {
+ "name": "erreur coordonnées",
         "type": "sound",
         "description": "Erreur coordonées",
         "src": "/sound/coordonées mauvaises.wav"
@@ -136,138 +195,24 @@
         "src": "/sound/téléportation.wav"
       },
       {
-        "name": "transfert OK",
+        "name": "transfert terminé",
         "type": "sound",
         "description": "Bienvenue a Jérusalem",
         "src": "/sound/transfert terminé.wav"
-      },
-{
-        "name": "BIPBIP MESSAGE",
-        "type": "sound",
-        "description": "jingle message",
-        "src": "/sound/jingle.mp3"
       },
  {
         "name": "en attente",
         "type": "video",
         "description": "sivrage is waiting",
         "src": "/video/waiting.mp4"
-      },
- {
-        "name": "RETOUR IMPOSSIBLE",
-        "type": "sound",
-        "description": "pas sans la couronne",
-        "src": "/sound/retour impossible.wav"
-      },
-      {
-        "name": "Defaut",
-        "type": "sound",
-        "description": "Bruit défaut de la machine",
-        "src": "/sound/défaut.wav"
-      },
-      {
-        "name": "protocole d'urgence",
-        "type": "sound",
-        "description": "protocole d'urgence",
-        "src": "/sound/protocole d'urgence.wav"
-      },
- {
-        "name": "PROTOCOLE ACTIVE",
-        "type": "sound",
-        "description": "Activation du protocole d'urgence",
-        "src": "/sound/protocole active.wav"
-      },
- {
-        "name": "SORTIE ouverture trappe",
-        "type": "sound",
-        "description": "ouverture sortie d'urgence",
-        "src": "/sound/sortie.wav"
-      },
-      {
-        "name": "Alerte",
-        "type": "video",
-        "description": "Activez le protocole d'urgence",
-        "src": "/video/alerte.mp4"
-      },
- {
-        "name": "SORTIE",
-        "type": "video",
-        "description": "regardez, par là !",
-        "src": "/video/sortie.mp4"
       }
-    ]
+   ]
   },
- {
+  {
     "step": "3",
-    "step_name": "messages optionnels ",
+    "step_name": "TEMPLE",
     "buttons": [
  {
-        "name": "ALIMENTATION 50",
-        "type": "sound",
-        "description": "Alim 50%",
-        "src": "/sound/alimentation _50.wav"
-      },
-{
-        "name": "BIPBIP MESSAGE",
-        "type": "sound",
-        "description": "jingle message",
-        "src": "/sound/jingle.mp3"
-      },
- {
-        "name": "MESSAGE",
-        "type": "sound",
-        "description": "Vous avez un nouveau message",
-        "src": "/sound/message.wav"
-      },
- {
-        "name": "Indice cable bleu",
-        "type": "image",
-        "description": "CABLE BLEU",
-        "src": "/img/cable bleu.jpg"
-      },
-       {
-        "name": "Indice cristal caché",
-        "type": "image",
-        "description": "cristal dans le coin",
-        "src": "/img/cristal manquant.jpg"
-      },
- {
-        "name": "Indice pression hydro",
-        "type": "image",
-        "description": "indice boutons 6433",
-        "src": "/img/image pression.jpg"
-      },
- {
-        "name": "ouvrez le hublot",
-        "type": "image",
-        "description": "ouvrez le hublot",
-        "src": "/img/ouvrez hublot.jpg"
-      },
- {
-        "name": "affiche symboles TEST A",
-        "type": "image",
-        "description": "affiche symboles TEST A",
-        "src": "/img/symboles test a.jpg"
-      },
- {
-        "name": "Indice BOLIVIE",
-        "type": "image",
-        "description": "indice Bolivie chiffre 6",
-        "src": "/img/bolivie.jpg"
-      },
-       {
-        "name": "Indice TURQUIE",
-        "type": "image",
-        "description": "indice Turquie chiffre 5",
-        "src": "/img/turquie.jpg"
-      },
-  {
-        "name": "Solution ENGRENAGES",
-        "type": "image",
-        "description": "Solution des ENGRENAGES",
-        "src": "/img/solution_matrice.jpg"
-      },
-{
         "name": "Indice épée grotte",
         "type": "image",
         "description": "indice épée grotte",
@@ -310,6 +255,56 @@
         "src": "/img/oeil.jpg"
       },
 {
+        "name": "BIPBIP MESSAGE",
+        "type": "sound",
+        "description": "jingle message",
+        "src": "/sound/jingle.mp3"
+      },
+  {
+        "name": "en attente",
+        "type": "video",
+        "description": "sivrage is waiting",
+        "src": "/video/waiting.mp4"
+      }
+    ]
+  },
+ {
+    "step": "4",
+    "step_name": "Retour Provins ",
+    "buttons": [
+
+{
+        "name": "BIPBIP MESSAGE",
+        "type": "sound",
+        "description": "jingle message",
+        "src": "/sound/jingle.mp3"
+      },
+ {
+        "name": "en attente",
+        "type": "video",
+        "description": "sivrage is waiting",
+        "src": "/video/waiting.mp4"
+      },
+ {
+        "name": "RETOUR IMPOSSIBLE",
+        "type": "sound",
+        "description": "pas sans la couronne",
+        "src": "/sound/retour impossible.wav"
+      },
+ {
+        "name": "Alerte",
+        "type": "video",
+        "description": "Activez le protocole d'urgence",
+        "src": "/video/alerte.mp4"
+      },
+   
+      {
+        "name": "protocole d'urgence",
+        "type": "sound",
+        "description": "protocole d'urgence",
+        "src": "/sound/protocole d'urgence.wav"
+      },
+{
         "name": "QUESTION SECRETE",
         "type": "image",
         "description": "AFFICHE QUESTION SECRETE",
@@ -327,12 +322,36 @@
         "description": "montre le cadre avec la devise visible",
         "src": "/img/question finale.jpg"
       },
- {
-        "name": "Noyau subspatial",
+{
+        "name": "PROTOCOLE ACTIVE",
         "type": "sound",
-        "description": "Liez vous au noyau",
-        "src": "/sound/noyau subspatial.wav"
+        "description": "Activation du protocole d'urgence",
+        "src": "/sound/protocole active.wav"
+      },
+{
+        "name": "TELEPORTATION",
+        "type": "sound",
+        "description": "Son de téléportation",
+        "src": "/sound/téléportation.wav"
+      },
+   {
+        "name": "Defaut",
+        "type": "sound",
+        "description": "Bruit défaut de la machine",
+        "src": "/sound/défaut.wav"
+      },
+  {
+        "name": "SORTIE ouverture trappe",
+        "type": "sound",
+        "description": "ouverture sortie d'urgence",
+        "src": "/sound/sortie.wav"
+      },
+ {
+        "name": "SORTIE",
+        "type": "video",
+        "description": "regardez, par là !",
+        "src": "/video/sortie.mp4"
       }
-]
-       }
+    ]
+         }
 ]
