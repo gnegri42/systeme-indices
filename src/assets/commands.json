@@ -9,42 +9,20 @@
         "description": "jingle message",
         "src": "/sound/jingle.mp3"
       },
-           {
-        "name": "Alimentation Requise",
-        "type": "video",
-        "description": "5 cables 2 cristaux requis",
-        "src": "/video/vidéo 1.mp4"
-      },
 {
         "name": "Bonjour",
         "type": "sound",
         "description": "message de bienvenue",
         "src": "/sound/Bonjour.wav"
       },
-      {
-        "name": "ALIMENTATION 50",
-        "type": "sound",
-        "description": "Alim 50%",
-        "src": "/sound/alimentation _50.wav"
+           {
+        "name": "Alimentation Requise",
+        "type": "video",
+        "description": "5 cables 2 cristaux requis",
+        "src": "/video/vidéo 1.mp4"
       },
- {
-        "name": "MESSAGE",
-        "type": "sound",
-        "description": "Vous avez un nouveau message",
-        "src": "/sound/message.wav"
-      },
- {
-        "name": "Indice cable bleu",
-        "type": "image",
-        "description": "CABLE BLEU",
-        "src": "/img/cable bleu.jpg"
-      },
-       {
-        "name": "Indice cristal caché",
-        "type": "image",
-        "description": "cristal dans le coin",
-        "src": "/img/cristal manquant.jpg"
-      },
+
+
       {
         "name": "ALLUMAGE",
         "type": "sound",
@@ -80,7 +58,31 @@
         "type": "sound",
         "description": "Son test AVC",
         "src": "/sound/test AVC.wav"
-}
+},
+      {
+        "name": "ALIMENTATION 50",
+        "type": "sound",
+        "description": "Alim 50%",
+        "src": "/sound/alimentation _50.wav"
+      },
+ {
+        "name": "MESSAGE",
+        "type": "sound",
+        "description": "Vous avez un nouveau message",
+        "src": "/sound/message.wav"
+      },
+ {
+        "name": "Indice cable bleu",
+        "type": "image",
+        "description": "CABLE BLEU",
+        "src": "/img/cable bleu.jpg"
+      },
+       {
+        "name": "Indice cristal caché",
+        "type": "image",
+        "description": "cristal dans le coin",
+        "src": "/img/cristal manquant.jpg"
+      }
 ]
       },
  {
@@ -93,55 +95,12 @@
         "description": "jingle message",
         "src": "/sound/jingle.mp3"
       },
-      {
-        "name": "Couleurs",
-        "type": "video",
-        "description": "rvbjbrbrjb",
-        "src": "/video/Couleur2mp4.mp4"
-      },
    {
         "name": "Couleurs difficile",
         "type": "video",
         "description": "rvbjbrbrjb",
         "src": "/video/Couleur2mp4hard.mp4"
       },
- {
-        "name": "ouvrez le hublot",
-        "type": "image",
-        "description": "ouvrez le hublot",
-        "src": "/img/ouvrez hublot.jpg"
-      },
- {
-        "name": "affiche symboles TEST A",
-        "type": "image",
-        "description": "affiche symboles TEST A",
-        "src": "/img/symboles test a.jpg"
-      },
-{
-        "name": "INDICE RESET TEST V",
-        "type": "sound",
-        "description": "lisez message test v",
-        "src": "/sound/message départ test v.wav"
-      },
- {
-        "name": "Indice BOLIVIE",
-        "type": "image",
-        "description": "indice Bolivie chiffre 6",
-        "src": "/img/bolivie.jpg"
-      },
-       {
-        "name": "Indice TURQUIE",
-        "type": "image",
-        "description": "indice Turquie chiffre 5",
-        "src": "/img/turquie.jpg"
-      },
-  {
-        "name": "Solution ENGRENAGES",
-        "type": "image",
-        "description": "Solution des ENGRENAGES",
-        "src": "/img/solution_matrice.jpg"
-      },
- 
  {
         "name": "TEST A ok",
         "type": "sound",
@@ -176,8 +135,7 @@
         "description": "saisissez les coordonées",
         "src": "/video/vidéo 4.mp4"
       }, 
-       {
- "name": "erreur coordonnées",
+        "name": "erreur coordonnées",
         "type": "sound",
         "description": "Erreur coordonées",
         "src": "/sound/coordonées mauvaises.wav"
@@ -188,7 +146,64 @@
         "description": "31 46 02 N 35 12 47 E",
         "src": "/sound/téléportation prête.wav"
       },
+ {
+        "name": "ouvrez le hublot",
+        "type": "image",
+        "description": "ouvrez le hublot",
+        "src": "/img/ouvrez hublot.jpg"
+      },
+ {
+        "name": "affiche symboles TEST A",
+        "type": "image",
+        "description": "affiche symboles TEST A",
+        "src": "/img/symboles test a.jpg"
+      },
+{
+        "name": "INDICE RESET TEST V",
+        "type": "sound",
+        "description": "lisez message test v",
+        "src": "/sound/message départ test v.wav"
+      },
       {
+        "name": "Couleurs",
+        "type": "video",
+        "description": "rvbjbrbrjb",
+        "src": "/video/Couleur2mp4.mp4"
+      },
+ {
+        "name": "Indice BOLIVIE",
+        "type": "image",
+        "description": "indice Bolivie chiffre 6",
+        "src": "/img/bolivie.jpg"
+      },
+       {
+        "name": "Indice TURQUIE",
+        "type": "image",
+        "description": "indice Turquie chiffre 5",
+        "src": "/img/turquie.jpg"
+      },
+  {
+        "name": "Solution ENGRENAGES",
+        "type": "image",
+        "description": "Solution des ENGRENAGES",
+        "src": "/img/solution_matrice.jpg"
+      },
+ 
+
+     
+ {
+        "name": "en attente",
+        "type": "video",
+        "description": "sivrage is waiting",
+        "src": "/video/waiting.mp4"
+      }
+   ]
+  },
+  {
+    "step": "3",
+    "step_name": "TELEPORTATION ET TEMPLE",
+    "buttons": [
+ {
         "name": "TELEPORTATION",
         "type": "sound",
         "description": "Son de téléportation",
@@ -200,18 +215,6 @@
         "description": "Bienvenue a Jérusalem",
         "src": "/sound/transfert terminé.wav"
       },
- {
-        "name": "en attente",
-        "type": "video",
-        "description": "sivrage is waiting",
-        "src": "/video/waiting.mp4"
-      }
-   ]
-  },
-  {
-    "step": "3",
-    "step_name": "TEMPLE",
-    "buttons": [
  {
         "name": "Indice épée grotte",
         "type": "image",
