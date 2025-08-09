@@ -54,6 +54,26 @@
   row-gap: 30px;
 }
 
+.command-section {
+  grid-column: 1 / -1; /* section spans full width across the two columns */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.command-section-title {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.command-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 12px;
+}
+
 .command-container {
   display: flex;
   flex-direction: column;

@@ -19,6 +19,10 @@ const GameMasterPage = () => {
   const WS_URL = `ws://${mainUrl}:8080`;
   const [stepToShow, setStepToShow] = useState("1");
   const [targetOverride, setTargetOverride] = useState(null);
+  // Notification sound controls
+  const [notifVolume, setNotifVolume] = useState(0.6);
+  const [audioReady, setAudioReady] = useState(false);
+  const audioRef = React.useRef(null);
 
   useEffect(() => {
     if (messages.length > 4) {
@@ -47,6 +51,16 @@ const GameMasterPage = () => {
         if (messageData.type == "chat" || messageData.type == "playerchat") {
           console.log("Received message:", messageData);
           setMessages((prevMessages) => [...prevMessages, messageData]);
+          // Play notification only for player-originated chat
+          if (audioRef.current && messageData.type === "playerchat") {
+            try {
+              audioRef.current.currentTime = 0;
+              audioRef.current.play();
+            } catch (e) {
+              // Ignore autoplay errors; will succeed after first user gesture
+              console.warn("Unable to play notification sound yet.");
+            }
+          }
         }
       } catch (error) {
         console.error("Error parsing message as JSON:", error);
@@ -65,6 +79,20 @@ const GameMasterPage = () => {
       socket.close();
     };
   }, []);
+
+  // Préparation/MAJ du son de notification
+  useEffect(() => {
+    if (!audioRef.current) {
+      const el = new Audio("/sound/jingle.mp3");
+      el.volume = notifVolume;
+      el.addEventListener("canplaythrough", () => setAudioReady(true), {
+        once: true,
+      });
+      audioRef.current = el;
+    } else {
+      audioRef.current.volume = notifVolume;
+    }
+  }, [notifVolume]);
 
   /**
    * Ajout un texte à la liste des messages de la page.
@@ -116,6 +144,20 @@ const GameMasterPage = () => {
       <div className="gamemaster-clues">
         <ChronometerComponent />
         <ChatWindow messages={messages} />
+        <div className="notification-controls" style={{ margin: "8px 0" }}>
+          <label>
+            Volume
+            <input
+              type="range"
+              min={0}
+              max={1}
+              step={0.05}
+              value={notifVolume}
+              onChange={(e) => setNotifVolume(parseFloat(e.target.value))}
+              style={{ marginLeft: 8, verticalAlign: "middle" }}
+            />
+          </label>
+        </div>
         <label>
           <input
             type="checkbox"
@@ -128,7 +170,7 @@ const GameMasterPage = () => {
           onSend={sendMessage}
           textarea={false}
           sendButton={false}
-          playJingle={true}
+          playJingle={false}
         />
         <button onClick={() => resetChat()}>Reset Chat</button>
       </div>
@@ -137,29 +179,92 @@ const GameMasterPage = () => {
         <div className="gamemaster-commands">
           {Commands.map((commands, index) =>
             commands.step == stepToShow ? (
-              commands.buttons.map((commandButton, index) => (
-                <>
-                  <div className="command-container">
-                    {commandButton.type == "bypass" ? (
-                      <Bypass commandButton={commandButton} key={index} />
-                    ) : commandButton.type == "sound" ? (
-                      <SoundCommand commandButton={commandButton} key={index} />
-                    ) : commandButton.type == "video" ||
-                      commandButton.type == "image" ? (
-                      <MediaCommand
-                        commandButton={commandButton}
-                        key={index}
-                        sendMedia={sendMedia}
-                      />
-                    ) : (
-                      <></>
-                    )}
+              // Support either legacy `buttons` array or new `sections` array
+              commands.sections && Array.isArray(commands.sections) ? (
+                commands.sections.map((section, sIdx) => (
+                  <div className="command-section" key={`section-${sIdx}`}>
+                    {section.title ? (
+                      <h3 className="command-section-title">{section.title}</h3>
+                    ) : null}
+                    <div className="command-section-content">
+                      {section.buttons?.map((commandButton, bIdx) => (
+                        <div className="command-container" key={`btn-${bIdx}`}>
+                          {commandButton.type == "bypass" ? (
+                            <Bypass commandButton={commandButton} />
+                          ) : commandButton.type == "sound" ? (
+                            <SoundCommand commandButton={commandButton} />
+                          ) : commandButton.type == "video" ||
+                            commandButton.type == "image" ? (
+                            <MediaCommand
+                              commandButton={commandButton}
+                              sendMedia={sendMedia}
+                            />
+                          ) : null}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </>
-              ))
-            ) : (
-              <></>
-            )
+                ))
+              ) : (
+                // If no sections provided, auto-group into sections by type
+                (() => {
+                  const sounds = (commands.buttons || []).filter(
+                    (b) => b.type === "sound"
+                  );
+                  const media = (commands.buttons || []).filter(
+                    (b) => b.type === "video" || b.type === "image"
+                  );
+                  const other = (commands.buttons || []).filter(
+                    (b) => b.type !== "sound" && b.type !== "video" && b.type !== "image"
+                  );
+                  return (
+                    <>
+                      {sounds.length > 0 && (
+                        <div className="command-section" key={`auto-sounds`}>
+                          <h3 className="command-section-title">Sons</h3>
+                          <div className="command-section-content">
+                            {sounds.map((commandButton, bIdx) => (
+                              <div className="command-container" key={`sound-${bIdx}`}>
+                                <SoundCommand commandButton={commandButton} />
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {media.length > 0 && (
+                        <div className="command-section" key={`auto-media`}>
+                          <h3 className="command-section-title">Médias</h3>
+                          <div className="command-section-content">
+                            {media.map((commandButton, bIdx) => (
+                              <div className="command-container" key={`media-${bIdx}`}>
+                                <MediaCommand
+                                  commandButton={commandButton}
+                                  sendMedia={sendMedia}
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {other.length > 0 && (
+                        <div className="command-section" key={`auto-other`}>
+                          <h3 className="command-section-title">Autres</h3>
+                          <div className="command-section-content">
+                            {other.map((commandButton, bIdx) => (
+                              <div className="command-container" key={`other-${bIdx}`}>
+                                {commandButton.type == "bypass" ? (
+                                  <Bypass commandButton={commandButton} />
+                                ) : null}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  );
+                })()
+              )
+            ) : null
           )}
         </div>
       </div>
