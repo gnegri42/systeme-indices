@@ -2,7 +2,8 @@
   {
     "step": "1",
     "step_name": "PARTIE 1",
-    "buttons": [
+    "sections": [
+      { "title": "Bloc 1", "buttons": [
 
            {
         "name": "Alimentation Requise",
@@ -105,12 +106,15 @@
         "description": "alignez les curseurs",
         "src": "/video/matrice.mp4"
       }
+      ]
+      }
     ]
   },
   {
     "step": "2",
     "step_name": "partie 2",
-    "buttons": [
+    "sections": [
+      { "title": "Bloc 1", "buttons": [
  {
         "name": "erreur coordonnées",
         "type": "sound",
@@ -183,12 +187,15 @@
         "description": "Activez le protocole d'urgence",
         "src": "/video/alerte.mp4"
       }
+      ]
+      }
     ]
   },
  {
     "step": "3",
     "step_name": "messages optionnels ",
-    "buttons": [
+    "sections": [
+      { "title": "Bloc 1", "buttons": [
  {
         "name": "ALIMENTATION 50",
         "type": "sound",
@@ -315,6 +322,8 @@
         "description": "Liez vous au noyau",
         "src": "/sound/noyau subspatial.wav"
       }
-]
-       }
+      ]
+      }
+    ]
+  }
 ]
