@@ -1,328 +1,375 @@
 [
   {
     "step": "1",
-    "step_name": "PARTIE 1",
+    "step_name": "ALIMENTATION ET PRESSION HYDRO",
     "sections": [
-      { "title": "Bloc 1", "buttons": [
-
-           {
-        "name": "Alimentation Requise",
-        "type": "video",
-        "description": "5 cables 2 cristaux requis",
-        "src": "/video/vidéo 1.mp4"
-      },
-{
-        "name": "Bonjour",
-        "type": "sound",
-        "description": "message de bienvenue",
-        "src": "/sound/Bonjour.wav"
-      },
-     
       {
-        "name": "ALLUMAGE",
-        "type": "sound",
-        "description": "Son d'allumage de la machine",
-        "src": "/sound/allumage.wav"
-      },
-      {
-        "name": "Pression Hydraulique",
-        "type": "video",
-        "description": "000001 000100 002000",
-        "src": "/video/vidéo 2.mp4"
-      },
-      {
-        "name": "son pression hydro",
-        "type": "sound",
-        "description": "son pression hydrolique",
-        "src": "/sound/pression hydro.wav"
-      },
-      {
-        "name": "TEST AVC",
-        "type": "video",
-        "description": "Test automatique",
-        "src": "/video/vidéo 3.mp4"
-      },
-      {
-        "name": "SON test AVC",
-        "type": "sound",
-        "description": "Son test AVC",
-        "src": "/sound/test AVC.wav"
-      },
- {
-        "name": "INDICE RESET TEST V",
-        "type": "sound",
-        "description": "lisez message test v",
-        "src": "/sound/message départ test v.wav"
-      },
-      {
-        "name": "Couleurs",
-        "type": "video",
-        "description": "rvbjbrbrjb",
-        "src": "/video/Couleur2mp4.mp4"
-      },
-   {
-        "name": "Couleurs difficile",
-        "type": "video",
-        "description": "rvbjbrbrjb",
-        "src": "/video/Couleur2mp4hard.mp4"
-      },
- {
-        "name": "TEST A ok",
-        "type": "sound",
-        "description": "Bille aimant OK",
-        "src": "/sound/TEST A ok.wav"
-      }, {
-        "name": "TEST V OK",
-        "type": "sound",
-        "description": "BOUTONS COULEURS OK",
-        "src": "/sound/Test V ok.wav"
-      }, {
-        "name": "TEST C OK",
-        "type": "sound",
-        "description": "24657138 OK",
-        "src": "/sound/test C ok.wav"
-      },
- {
-        "name": "tests AVC complétés",
-        "type": "sound",
-        "description": "tests AVC achevés",
-        "src": "/sound/tests acheves.wav"
-      },
- {
-        "name": "BIPBIP MESSAGE",
-        "type": "sound",
-        "description": "jingle message",
-        "src": "/sound/jingle.mp3"
-      },
-   {
-        "name": "en attente",
-        "type": "video",
-        "description": "sivrage is waiting",
-        "src": "/video/waiting.mp4"
-      },
-      {
-        "name": "Matrice de transfert",
-        "type": "video",
-        "description": "alignez les curseurs",
-        "src": "/video/matrice.mp4"
-      }
-      ]
+        "title": "Bloc 1",
+        "buttons": [
+          {
+            "name": "BIPBIP MESSAGE",
+            "type": "sound",
+            "description": "jingle message",
+            "src": "/sound/jingle.mp3"
+          },
+          {
+            "name": "Bonjour",
+            "type": "sound",
+            "description": "message de bienvenue",
+            "src": "/sound/Bonjour.wav"
+          },
+          {
+            "name": "Alimentation Requise",
+            "type": "video",
+            "description": "5 cables 2 cristaux requis",
+            "src": "/video/vidéo 1.mp4"
+          },
+          {
+            "name": "ALLUMAGE",
+            "type": "sound",
+            "description": "Son d'allumage de la machine",
+            "src": "/sound/allumage.wav"
+          },
+          {
+            "name": "Pression Hydraulique",
+            "type": "video",
+            "description": "000001 000100 002000",
+            "src": "/video/vidéo 2.mp4"
+          },
+          {
+            "name": "son pression hydro",
+            "type": "sound",
+            "description": "son pression hydrolique",
+            "src": "/sound/pression hydro.wav"
+          },
+          {
+            "name": "Indice pression hydro",
+            "type": "image",
+            "description": "indice boutons 6433",
+            "src": "/img/image pression.jpg"
+          },
+          {
+            "name": "TEST AVC",
+            "type": "video",
+            "description": "Test automatique",
+            "src": "/video/vidéo 3.mp4"
+          },
+          {
+            "name": "SON PRESSION OK",
+            "type": "sound",
+            "description": "Son test AVC",
+            "src": "/sound/test AVC.wav"
+          },
+          {
+            "name": "ALIMENTATION 50",
+            "type": "sound",
+            "description": "Alim 50%",
+            "src": "/sound/alimentation _50.wav"
+          },
+          {
+            "name": "MESSAGE",
+            "type": "sound",
+            "description": "Vous avez un nouveau message",
+            "src": "/sound/message.wav"
+          },
+          {
+            "name": "Indice cable bleu",
+            "type": "image",
+            "description": "CABLE BLEU",
+            "src": "/img/cable bleu.jpg"
+          },
+          {
+            "name": "Indice cristal caché",
+            "type": "image",
+            "description": "cristal dans le coin",
+            "src": "/img/cristal manquant.jpg"
+          }
+        ]
       }
     ]
   },
   {
     "step": "2",
-    "step_name": "partie 2",
+    "step_name": "TEST AVC + transfert",
     "sections": [
-      { "title": "Bloc 1", "buttons": [
- {
-        "name": "erreur coordonnées",
-        "type": "sound",
-        "description": "Erreur coordonées",
-        "src": "/sound/coordonées mauvaises.wav"
-      },
       {
-        "name": "Téléportation prête",
-        "type": "sound",
-        "description": "31 46 02 N 35 12 47 E",
-        "src": "/sound/téléportation prête.wav"
-      },
-      {
-        "name": "TELEPORTATION",
-        "type": "sound",
-        "description": "Son de téléportation",
-        "src": "/sound/téléportation.wav"
-      },
-      {
-        "name": "transfert OK",
-        "type": "sound",
-        "description": "Bienvenue a Jérusalem",
-        "src": "/sound/transfert terminé.wav"
-      },
-{
-        "name": "BIPBIP MESSAGE",
-        "type": "sound",
-        "description": "jingle message",
-        "src": "/sound/jingle.mp3"
-      },
- {
-        "name": "en attente",
-        "type": "video",
-        "description": "sivrage is waiting",
-        "src": "/video/waiting.mp4"
-      },
- {
-        "name": "RETOUR IMPOSSIBLE",
-        "type": "sound",
-        "description": "pas sans la couronne",
-        "src": "/sound/retour impossible.wav"
-      },
-      {
-        "name": "Defaut",
-        "type": "sound",
-        "description": "Bruit défaut de la machine",
-        "src": "/sound/défaut.wav"
-      },
-      {
-        "name": "protocole d'urgence",
-        "type": "sound",
-        "description": "protocole d'urgence",
-        "src": "/sound/protocole d'urgence.wav"
-      },
- {
-        "name": "PROTOCOLE ACTIVE",
-        "type": "sound",
-        "description": "Activation du protocole d'urgence",
-        "src": "/sound/protocole active.wav"
-      },
- {
-        "name": "SORTIE ouverture trappe",
-        "type": "sound",
-        "description": "ouverture sortie d'urgence",
-        "src": "/sound/sortie.wav"
-      },
-      {
-        "name": "Alerte",
-        "type": "video",
-        "description": "Activez le protocole d'urgence",
-        "src": "/video/alerte.mp4"
-      }
-      ]
+        "title": "Bloc 1",
+        "buttons": [
+          {
+            "name": "BIPBIP MESSAGE",
+            "type": "sound",
+            "description": "jingle message",
+            "src": "/sound/jingle.mp3"
+          },
+          {
+            "name": "Couleurs difficile",
+            "type": "video",
+            "description": "rvbjbrbrjb",
+            "src": "/video/Couleur2mp4hard.mp4"
+          },
+          {
+            "name": "TEST A ok",
+            "type": "sound",
+            "description": "Bille aimant OK",
+            "src": "/sound/TEST A ok.wav"
+          },
+          {
+            "name": "TEST V OK",
+            "type": "sound",
+            "description": "BOUTONS COULEURS OK",
+            "src": "/sound/Test V ok.wav"
+          },
+          {
+            "name": "TEST C OK",
+            "type": "sound",
+            "description": "24657138 OK",
+            "src": "/sound/test C ok.wav"
+          },
+          {
+            "name": "tests AVC complétés",
+            "type": "sound",
+            "description": "tests AVC achevés",
+            "src": "/sound/tests acheves.wav"
+          },
+          {
+            "name": "ENGRENAGES",
+            "type": "image",
+            "description": "alignez les curseurs",
+            "src": "/img/matrice.jpg"
+          },
+          {
+            "name": "Coordonnées GPS",
+            "type": "video",
+            "description": "saisissez les coordonées",
+            "src": "/video/vidéo 4.mp4"
+          },
+          {
+            "name": "erreur coordonnées",
+            "type": "sound",
+            "description": "Erreur coordonées",
+            "src": "/sound/coordonées mauvaises.wav"
+          },
+          {
+            "name": "Téléportation prête",
+            "type": "sound",
+            "description": "31 46 02 N 35 12 47 E",
+            "src": "/sound/téléportation prête.wav"
+          },
+          {
+            "name": "ouvrez le hublot",
+            "type": "image",
+            "description": "ouvrez le hublot",
+            "src": "/img/ouvrez hublot.jpg"
+          },
+          {
+            "name": "affiche symboles TEST A",
+            "type": "image",
+            "description": "affiche symboles TEST A",
+            "src": "/img/symboles test a.jpg"
+          },
+          {
+            "name": "INDICE RESET TEST V",
+            "type": "sound",
+            "description": "lisez message test v",
+            "src": "/sound/message départ test v.wav"
+          },
+          {
+            "name": "Couleurs",
+            "type": "video",
+            "description": "rvbjbrbrjb",
+            "src": "/video/Couleur2mp4.mp4"
+          },
+          {
+            "name": "Indice BOLIVIE",
+            "type": "image",
+            "description": "indice Bolivie chiffre 6",
+            "src": "/img/bolivie.jpg"
+          },
+          {
+            "name": "Indice TURQUIE",
+            "type": "image",
+            "description": "indice Turquie chiffre 5",
+            "src": "/img/turquie.jpg"
+          },
+          {
+            "name": "Solution ENGRENAGES",
+            "type": "image",
+            "description": "Solution des ENGRENAGES",
+            "src": "/img/solution_matrice.jpg"
+          },
+          {
+            "name": "en attente",
+            "type": "video",
+            "description": "sivrage is waiting",
+            "src": "/video/waiting.mp4"
+          }
+        ]
       }
     ]
   },
- {
-    "step": "3",
-    "step_name": "messages optionnels ",
-    "sections": [
-      { "title": "Bloc 1", "buttons": [
- {
-        "name": "ALIMENTATION 50",
-        "type": "sound",
-        "description": "Alim 50%",
-        "src": "/sound/alimentation _50.wav"
-      },
-{
-        "name": "BIPBIP MESSAGE",
-        "type": "sound",
-        "description": "jingle message",
-        "src": "/sound/jingle.mp3"
-      },
- {
-        "name": "MESSAGE",
-        "type": "sound",
-        "description": "Vous avez un nouveau message",
-        "src": "/sound/message.wav"
-      },
- {
-        "name": "Indice cable bleu",
-        "type": "image",
-        "description": "CABLE BLEU",
-        "src": "/img/cable bleu.jpg"
-      },
-       {
-        "name": "Indice cristal caché",
-        "type": "image",
-        "description": "cristal dans le coin",
-        "src": "/img/cristal manquant.jpg"
-      },
- {
-        "name": "Indice pression hydro",
-        "type": "image",
-        "description": "indice boutons 6433",
-        "src": "/img/image pression.jpg"
-      },
- {
-        "name": "ouvrez le hublot",
-        "type": "image",
-        "description": "ouvrez le hublot",
-        "src": "/img/ouvrez hublot.jpg"
-      },
- {
-        "name": "affiche symboles TEST A",
-        "type": "image",
-        "description": "affiche symboles TEST A",
-        "src": "/img/symboles test a.jpg"
-      },
- {
-        "name": "Indice BOLIVIE",
-        "type": "image",
-        "description": "indice Bolivie chiffre 6",
-        "src": "/img/bolivie.jpg"
-      },
-       {
-        "name": "Indice TURQUIE",
-        "type": "image",
-        "description": "indice Turquie chiffre 5",
-        "src": "/img/turquie.jpg"
-      },
   {
-        "name": "Solution ENGRENAGES",
-        "type": "image",
-        "description": "Solution des ENGRENAGES",
-        "src": "/img/solution_matrice.jpg"
-      },
-{
-        "name": "Indice épée grotte",
-        "type": "image",
-        "description": "indice épée grotte",
-        "src": "/img/epee grotte.jpg"
-      },
+    "step": "3",
+    "step_name": "TELEPORTATION ET TEMPLE",
+    "sections": [
       {
-        "name": "Indice épée SABLE",
-        "type": "image",
-        "description": "indice épée SABLE",
-        "src": "/img/epee sable.jpg"
-      },
-      {
-        "name": "Indice odeurs",
-        "type": "image",
-        "description": "indice pierre odeurs",
-        "src": "/img/odeurs.jpg"
-      },
-      {
-        "name": "Indice odeurs",
-        "type": "image",
-        "description": "indice avec ordre !",
-        "src": "/img/odeurs facile.jpg"
-      },
-       {
-        "name": "Indice OFFRANDES TOILE",
-        "type": "image",
-        "description": "indice quantités sur toile",
-        "src": "/img/toile offrandes.jpg"
-      },
- {
-        "name": "Indice CUBES A EMPILER",
-        "type": "image",
-        "description": "indice 7 cubes à monter",
-        "src": "/img/cubes.jpg"
-      },
-{
-        "name": "QUESTION SECRETE",
-        "type": "image",
-        "description": "AFFICHE QUESTION SECRETE",
-        "src": "/img/question secrete.jpg"
-      },
-{
-        "name": "Indice question cadre caché",
-        "type": "image",
-        "description": "montre le cadre avec la devise cachée",
-        "src": "/img/question cache.jpg"
-      },
-{
-        "name": "Indice question cadre visible",
-        "type": "image",
-        "description": "montre le cadre avec la devise visible",
-        "src": "/img/question finale.jpg"
-      },
- {
-        "name": "Noyau subspatial",
-        "type": "sound",
-        "description": "Liez vous au noyau",
-        "src": "/sound/noyau subspatial.wav"
+        "title": "Bloc 3",
+        "buttons": [
+          {
+            "name": "TELEPORTATION",
+            "type": "sound",
+            "description": "Son de téléportation",
+            "src": "/sound/téléportation.wav"
+          },
+          {
+            "name": "transfert terminé",
+            "type": "sound",
+            "description": "Bienvenue a Jérusalem",
+            "src": "/sound/transfert terminé.wav"
+          },
+          {
+            "name": "Indice épée grotte",
+            "type": "image",
+            "description": "indice épée grotte",
+            "src": "/img/epee grotte.jpg"
+          },
+          {
+            "name": "Indice épée SABLE",
+            "type": "image",
+            "description": "indice épée SABLE",
+            "src": "/img/epee sable.jpg"
+          },
+          {
+            "name": "Indice odeurs",
+            "type": "image",
+            "description": "indice pierre odeurs",
+            "src": "/img/odeurs.jpg"
+          },
+          {
+            "name": "Indice odeurs",
+            "type": "image",
+            "description": "indice avec ordre !",
+            "src": "/img/odeurs facile.jpg"
+          },
+          {
+            "name": "Indice OFFRANDES TOILE",
+            "type": "image",
+            "description": "indice quantités sur toile",
+            "src": "/img/toile offrandes.jpg"
+          },
+          {
+            "name": "Indice CUBES A EMPILER",
+            "type": "image",
+            "description": "indice 7 cubes à monter",
+            "src": "/img/cubes.jpg"
+          },
+          {
+            "name": "LASER OEIL",
+            "type": "image",
+            "description": "visez les yeux ",
+            "src": "/img/oeil.jpg"
+          },
+          {
+            "name": "BIPBIP MESSAGE",
+            "type": "sound",
+            "description": "jingle message",
+            "src": "/sound/jingle.mp3"
+          },
+          {
+            "name": "en attente",
+            "type": "video",
+            "description": "sivrage is waiting",
+            "src": "/video/waiting.mp4"
+          }
+        ]
       }
-      ]
+    ]
+  },
+  {
+    "step": "4",
+    "step_name": "Retour Provins ",
+    "sections": [
+      {
+        "title": "Bloc 2",
+        "buttons": [
+          {
+            "name": "BIPBIP MESSAGE",
+            "type": "sound",
+            "description": "jingle message",
+            "src": "/sound/jingle.mp3"
+          },
+          {
+            "name": "en attente",
+            "type": "video",
+            "description": "sivrage is waiting",
+            "src": "/video/waiting.mp4"
+          },
+          {
+            "name": "RETOUR IMPOSSIBLE",
+            "type": "sound",
+            "description": "pas sans la couronne",
+            "src": "/sound/retour impossible.wav"
+          },
+          {
+            "name": "Alerte",
+            "type": "video",
+            "description": "Activez le protocole d'urgence",
+            "src": "/video/alerte.mp4"
+          },
+          {
+            "name": "protocole d'urgence",
+            "type": "sound",
+            "description": "protocole d'urgence",
+            "src": "/sound/protocole d'urgence.wav"
+          },
+          {
+            "name": "QUESTION SECRETE",
+            "type": "image",
+            "description": "AFFICHE QUESTION SECRETE",
+            "src": "/img/question secrete.jpg"
+          },
+          {
+            "name": "Indice question cadre caché",
+            "type": "image",
+            "description": "montre le cadre avec la devise cachée",
+            "src": "/img/question cache.jpg"
+          },
+          {
+            "name": "Indice question cadre visible",
+            "type": "image",
+            "description": "montre le cadre avec la devise visible",
+            "src": "/img/question finale.jpg"
+          },
+          {
+            "name": "PROTOCOLE ACTIVE",
+            "type": "sound",
+            "description": "Activation du protocole d'urgence",
+            "src": "/sound/protocole active.wav"
+          },
+          {
+            "name": "TELEPORTATION",
+            "type": "sound",
+            "description": "Son de téléportation",
+            "src": "/sound/téléportation.wav"
+          },
+          {
+            "name": "Defaut",
+            "type": "sound",
+            "description": "Bruit défaut de la machine",
+            "src": "/sound/défaut.wav"
+          },
+          {
+            "name": "SORTIE ouverture trappe",
+            "type": "sound",
+            "description": "ouverture sortie d'urgence",
+            "src": "/sound/sortie.wav"
+          },
+          {
+            "name": "SORTIE",
+            "type": "video",
+            "description": "regardez, par là !",
+            "src": "/video/sortie.mp4"
+          }
+        ]
       }
     ]
   }
