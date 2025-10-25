@@ -155,6 +155,24 @@
             "description": "31 46 02 N 35 12 47 E",
             "src": "/sound/téléportation prête.wav"
           },
+              {
+            "name": "Toucher le noyau",
+            "type": "video",
+            "description": "31 46 02 N 35 12 47 E",
+            "src": "/video/toucher noyau.mp4"
+          },
+           {
+            "name": "TELEPORTATION",
+            "type": "sound",
+            "description": "Son de téléportation",
+            "src": "/sound/téléportation.wav"
+          },
+          {
+            "name": "transfert terminé",
+            "type": "sound",
+            "description": "Bienvenue a Jérusalem",
+            "src": "/sound/transfert terminé.wav"
+          },
           {
             "name": "ouvrez le hublot",
             "type": "image",
