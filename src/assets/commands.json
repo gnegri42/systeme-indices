@@ -6,6 +6,12 @@
       {
         "title": "Bloc 1",
         "buttons": [
+             {
+            "name": "Alimentation Requise",
+            "type": "video",
+            "description": "5 cables 2 cristaux requis",
+            "src": "/video/vidéo 1.mp4"
+          },
           {
             "name": "BIPBIP MESSAGE",
             "type": "sound",
@@ -18,12 +24,7 @@
             "description": "message de bienvenue",
             "src": "/sound/Bonjour.wav"
           },
-          {
-            "name": "Alimentation Requise",
-            "type": "video",
-            "description": "5 cables 2 cristaux requis",
-            "src": "/video/vidéo 1.mp4"
-          },
+       
           {
             "name": "ALLUMAGE",
             "type": "sound",
@@ -67,9 +68,9 @@
             "src": "/sound/message.wav"
           },
           {
-            "name": "Indice cable bleu",
+            "name": "Indice cable noir",
             "type": "image",
-            "description": "CABLE BLEU",
+            "description": "CABLE noir",
             "src": "/img/cable bleu.jpg"
           },
           {
@@ -132,18 +133,6 @@
             "src": "/img/matrice.jpg"
           },
           {
-            "name": "Coordonnées GPS",
-            "type": "video",
-            "description": "saisissez les coordonées",
-            "src": "/video/vidéo 4.mp4"
-          },
-          {
-            "name": "erreur coordonnées",
-            "type": "sound",
-            "description": "Erreur coordonées",
-            "src": "/sound/coordonées mauvaises.wav"
-          },
-          {
             "name": "Téléportation prête",
             "type": "sound",
             "description": "31 46 02 N 35 12 47 E",
@@ -184,13 +173,7 @@
             "type": "sound",
             "description": "lisez message test v",
             "src": "/sound/message départ test v.wav"
-          },
-          {
-            "name": "Couleurs",
-            "type": "video",
-            "description": "rvbjbrbrjb",
-            "src": "/video/Couleur2mp4.mp4"
-          },
+          },        
           {
             "name": "Indice BOLIVIE",
             "type": "image",
@@ -226,41 +209,17 @@
       {
         "title": "Bloc 3",
         "buttons": [
-          {
-            "name": "TELEPORTATION",
-            "type": "sound",
-            "description": "Son de téléportation",
-            "src": "/sound/téléportation.wav"
-          },
-          {
-            "name": "transfert terminé",
-            "type": "sound",
-            "description": "Bienvenue a Jérusalem",
-            "src": "/sound/transfert terminé.wav"
-          },
-          {
+                 {
             "name": "Indice épée grotte",
             "type": "image",
             "description": "indice épée grotte",
             "src": "/img/epee grotte.jpg"
           },
           {
-            "name": "Indice épée SABLE",
-            "type": "image",
-            "description": "indice épée SABLE",
-            "src": "/img/epee sable.jpg"
-          },
-          {
             "name": "Indice odeurs",
             "type": "image",
             "description": "indice pierre odeurs",
             "src": "/img/odeurs.jpg"
-          },
-          {
-            "name": "Indice odeurs",
-            "type": "image",
-            "description": "indice avec ordre !",
-            "src": "/img/odeurs facile.jpg"
           },
           {
             "name": "Indice OFFRANDES TOILE",
